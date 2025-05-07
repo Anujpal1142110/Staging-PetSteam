@@ -1,17 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+<<<<<<< HEAD
 import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
+=======
+import { FaBars, FaTimes } from 'react-icons/fa';
+>>>>>>> c354b8e523b602d3590c9fa4d261d0f7a08a7b16
 import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+<<<<<<< HEAD
   const [openDropdown, setOpenDropdown] = useState(null);
+=======
+>>>>>>> c354b8e523b602d3590c9fa4d261d0f7a08a7b16
   const location = useLocation();
 
   const navItems = [
     { title: 'Home', path: '/' },
+<<<<<<< HEAD
     { 
       title: 'About', 
       path: '/about',
@@ -76,6 +84,21 @@ const Header = () => {
     '/products': { active: 'Products', color: 'orange' },
     '/newsroom': { active: 'Newsroom', color: 'orange' },
     '/contact': { active: 'Contact', color: 'orange' }
+=======
+    { title: 'About', path: '/about' },
+    { title: 'Services', path: '/services' },
+    { title: 'Products', path: '/products' },
+    { title: 'Contact', path: '/contact' }
+  ];
+
+  // Page theme configurations
+  const pageThemes = {
+    '/': { active: 'Home', color: 'blue' },
+    '/about': { active: 'About', color: 'indigo' },
+    '/services': { active: 'Services', color: 'blue' },
+    '/products': { active: 'Products', color: 'emerald' },
+    '/contact': { active: 'Contact', color: 'purple' }
+>>>>>>> c354b8e523b602d3590c9fa4d261d0f7a08a7b16
   };
 
   // Get current page theme
@@ -102,6 +125,7 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+<<<<<<< HEAD
   const headerClass = isScrolled ? 'bg-white shadow-md' : 'bg-white';
 
   const handleMouseEnter = (itemTitle) => {
@@ -117,6 +141,15 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           {/* Logo with PSI style */}
+=======
+  // This ensures your header doesn't block page content
+  const headerClass = isScrolled ? 'bg-white shadow-md' : 'bg-gray-50';
+  
+  return (
+    <header className={`fixed w-full z-50 transition-all duration-300 ${headerClass} py-4`}>
+      <div className="container mx-auto px-6">
+        <div className="flex justify-between items-center">
+>>>>>>> c354b8e523b602d3590c9fa4d261d0f7a08a7b16
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <div className="bg-white rounded-md shadow-sm p-1 border border-gray-100">
@@ -128,6 +161,7 @@ const Header = () => {
             </div>
           </Link>
 
+<<<<<<< HEAD
           {/* Desktop Navigation with PSI style */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
@@ -191,6 +225,38 @@ const Header = () => {
             <Link
               to="/contact"
               className="btn bg-orange-600 hover:bg-orange-700 text-white py-3 px-6 rounded-md font-medium shadow-md transition-all duration-300"
+=======
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center space-x-10">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`relative font-medium text-lg transition-colors duration-300 ${
+                  location.pathname === item.path || 
+                  (item.path !== '/' && location.pathname.startsWith(item.path))
+                    ? `text-${currentTheme.color}-600 font-semibold`
+                    : 'text-gray-700 hover:text-gray-900'
+                }`}
+              >
+                {item.title}
+                {(location.pathname === item.path || 
+                  (item.path !== '/' && location.pathname.startsWith(item.path))) && (
+                  <motion.span
+                    layoutId="navIndicator"
+                    className={`absolute -bottom-1 left-0 w-full h-0.5 bg-${currentTheme.color}-600`}
+                  />
+                )}
+              </Link>
+            ))}
+          </div>
+
+          {/* Get a Quote Button */}
+          <div className="hidden lg:block">
+            <Link
+              to="/contact"
+              className="btn bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium shadow-md transition-all duration-300"
+>>>>>>> c354b8e523b602d3590c9fa4d261d0f7a08a7b16
             >
               Get a Quote
             </Link>
@@ -209,7 +275,11 @@ const Header = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* Mobile Menu with PSI style */}
+=======
+      {/* Mobile Menu */}
+>>>>>>> c354b8e523b602d3590c9fa4d261d0f7a08a7b16
       <motion.div
         initial={{ height: 0, opacity: 0 }}
         animate={{ 
@@ -222,6 +292,7 @@ const Header = () => {
         <div className="bg-white shadow-md py-4 px-6 mt-3">
           <nav className="flex flex-col space-y-4">
             {navItems.map((item) => (
+<<<<<<< HEAD
               <div key={item.path}>
                 {item.hasDropdown ? (
                   <motion.div>
@@ -284,6 +355,24 @@ const Header = () => {
             <Link
               to="/contact"
               className="btn bg-orange-600 hover:bg-orange-700 text-white py-3 px-6 rounded-md text-center font-medium shadow-md mt-2"
+=======
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`py-2 ${
+                  location.pathname === item.path || 
+                  (item.path !== '/' && location.pathname.startsWith(item.path))
+                    ? 'text-blue-600 font-medium'
+                    : 'text-gray-800'
+                }`}
+              >
+                {item.title}
+              </Link>
+            ))}
+            <Link
+              to="/contact"
+              className="btn bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md text-center font-medium shadow-md mt-2"
+>>>>>>> c354b8e523b602d3590c9fa4d261d0f7a08a7b16
             >
               Get a Quote
             </Link>
