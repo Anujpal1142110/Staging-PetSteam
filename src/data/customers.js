@@ -1,3 +1,4 @@
+// File: data/customers.js
 import img1 from '../../src/assets/images/Injection-molding-machine.png';
 import img2 from '../../src/assets/images/Pet-beverage-filling-line.png';
 import img3 from '../../src/assets/images/pet-preforn-mold.png';
@@ -6,7 +7,7 @@ import img5 from '../../src/assets/images/Drying-dehumidification-system.jpg';
 import img6 from '../../src/assets/images/caps-closures-mold.jpg';
 
 
-const servicesData = [
+const customers = [
   {
     id: 1,
     title: "Injection Molding Machine",
@@ -69,4 +70,5 @@ const servicesData = [
   }
  
 ];
-export default servicesData;
+
+export default customers;

@@ -8,6 +8,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [openSubDropdown, setOpenSubDropdown] = useState(null);
   const location = useLocation();
 
   const navItems = [
@@ -18,7 +19,21 @@ const Header = () => {
       hasDropdown: true,
       dropdownItems: [
         { title: 'About Us', path: '/about/us' },
-        { title: 'About Our Partners', path: '/about/partners' },
+        { 
+          title: 'About Our Partners', 
+          path: '/about/partners',
+          hasSubDropdown: true,
+          subDropdownItems: [
+            { title: 'NETSTAL', path: '/about/partners/netstal' },
+            { title: 'GDXL', path: '/about/partners/gdxl' },
+            { title: 'ZONWON', path: '/about/partners/zonwon' },
+            { title: 'Newamstar', path: '/about/partners/newamstar' },
+            { title: 'Corvaglia', path: '/about/partners/corvaglia' },
+            { title: 'Glaroform', path: '/about/partners/glaroform' },
+            { title: 'Eisbar', path: '/about/partners/eisbar' },
+            { title: 'Colorway', path: '/about/partners/colorway' }
+          ]
+        },
         { title: 'About Our Customers', path: '/about/customers' },
         { title: 'How We Work', path: '/about/how-we-work' }
       ]
@@ -104,19 +119,49 @@ const Header = () => {
 
   const headerClass = isScrolled ? 'bg-white shadow-md' : 'bg-white';
 
-  const handleMouseEnter = (itemTitle) => {
-    setOpenDropdown(itemTitle);
+  // Dropdown handling functions
+  const handleMenuItemClick = (itemTitle) => {
+    if (openDropdown === itemTitle) {
+      setOpenDropdown(null);
+      setOpenSubDropdown(null);
+    } else {
+      setOpenDropdown(itemTitle);
+      setOpenSubDropdown(null);
+    }
   };
 
-  const handleMouseLeave = () => {
-    setOpenDropdown(null);
+  const handleSubDropdownClick = (e, itemTitle) => {
+    e.stopPropagation(); // Prevent triggering parent dropdown toggle
+    if (openSubDropdown === itemTitle) {
+      setOpenSubDropdown(null);
+    } else {
+      setOpenSubDropdown(itemTitle);
+    }
   };
+
+  // Auto-close dropdowns when clicking an item
+  const handleDropdownItemClick = () => {
+    setOpenDropdown(null);
+    setOpenSubDropdown(null);
+  };
+
+  // Added: Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.dropdown-container')) {
+        setOpenDropdown(null);
+        setOpenSubDropdown(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
   
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${headerClass} py-4 border-b border-gray-100`}>
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
-          {/* Logo with PSI style */}
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <div className="bg-white rounded-md shadow-sm p-1 border border-gray-100">
@@ -128,57 +173,121 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation with PSI style */}
+          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <div 
                 key={item.path}
-                className="relative"
-                onMouseEnter={() => item.hasDropdown && handleMouseEnter(item.title)}
-                onMouseLeave={() => item.hasDropdown && handleMouseLeave()}
+                className="relative dropdown-container"
               >
-                <Link
-                  to={item.path}
-                  className={`relative font-medium text-lg transition-colors duration-300 flex items-center ${
-                    location.pathname === item.path || 
-                    (item.path !== '/' && location.pathname.startsWith(item.path))
-                      ? 'text-orange-600 font-semibold'
-                      : 'text-gray-700 hover:text-orange-600'
-                  }`}
-                >
-                  {item.title}
-                  {(location.pathname === item.path || 
-                    (item.path !== '/' && location.pathname.startsWith(item.path))) && (
-                    <motion.span
-                      layoutId="navIndicator"
-                      className="absolute -bottom-1 left-0 w-full h-0.5 bg-orange-600"
+                {item.hasDropdown ? (
+                  <button
+                    onClick={() => handleMenuItemClick(item.title)}
+                    className={`relative font-medium text-lg flex items-center group ${
+                      location.pathname === item.path || 
+                      (item.path !== '/' && location.pathname.startsWith(item.path))
+                        ? 'text-orange-600 font-semibold'
+                        : 'text-gray-700'
+                    }`}
+                  >
+                    <span className="group-hover:text-orange-600 transition-colors duration-300">
+                      {item.title}
+                    </span>
+                    <FaChevronDown 
+                      size={12} 
+                      className={`ml-2 group-hover:text-orange-600 transition-colors duration-300 ${
+                        openDropdown === item.title ? 'transform rotate-180' : ''
+                      }`}
                     />
-                  )}
-                </Link>
+                    {(location.pathname === item.path || 
+                      (item.path !== '/' && location.pathname.startsWith(item.path))) && (
+                      <motion.span
+                        layoutId="navIndicator"
+                        className="absolute -bottom-1 left-0 w-full h-0.5 bg-orange-600"
+                      />
+                    )}
+                  </button>
+                ) : (
+                  <Link
+                    to={item.path}
+                    className={`relative font-medium text-lg flex items-center group ${
+                      location.pathname === item.path || 
+                      (item.path !== '/' && location.pathname.startsWith(item.path))
+                        ? 'text-orange-600 font-semibold'
+                        : 'text-gray-700'
+                    }`}
+                  >
+                    <span className="group-hover:text-orange-600 transition-colors duration-300">
+                      {item.title}
+                    </span>
+                    {(location.pathname === item.path || 
+                      (item.path !== '/' && location.pathname.startsWith(item.path))) && (
+                      <motion.span
+                        layoutId="navIndicator"
+                        className="absolute -bottom-1 left-0 w-full h-0.5 bg-orange-600"
+                      />
+                    )}
+                  </Link>
+                )}
 
-                {/* PSI-style Dropdown Menu */}
+                {/* Main Dropdown Menu */}
                 {item.hasDropdown && openDropdown === item.title && (
-                  <motion.div
+                  <motion.div 
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute left-0 top-full mt-2 w-72 bg-white border border-gray-200 rounded-md shadow-lg overflow-hidden"
+                    className="absolute left-0 top-full mt-2 bg-white border border-gray-200 shadow-lg z-50 w-72 py-1"
                   >
-                    {item.dropdownItems.map((dropdownItem, index) => (
-                      <motion.div
+                    {item.dropdownItems.map((dropdownItem) => (
+                      <div 
                         key={dropdownItem.path}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.03 }}
+                        className="relative dropdown-container"
                       >
-                        <Link
-                          to={dropdownItem.path}
-                          className="block px-5 py-3 text-sm text-gray-700 transition-colors duration-200 hover:bg-orange-600 hover:text-white"
-                        >
-                          {dropdownItem.title}
-                        </Link>
-                      </motion.div>
+                        {dropdownItem.hasSubDropdown ? (
+                          <button
+                            onClick={(e) => handleSubDropdownClick(e, dropdownItem.title)}
+                            className={`flex justify-between items-center w-full px-5 py-3 ${
+                              openSubDropdown === dropdownItem.title 
+                                ? 'bg-orange-600 text-white' 
+                                : 'text-gray-700 hover:bg-orange-600 hover:text-white'
+                            } transition-all duration-300`}
+                          >
+                            <span>{dropdownItem.title}</span>
+                            <FaChevronDown size={12} className={`ml-2 ${
+                              openSubDropdown === dropdownItem.title ? 'transform rotate-180' : ''
+                            }`} />
+                          </button>
+                        ) : (
+                          <Link
+                            to={dropdownItem.path}
+                            onClick={handleDropdownItemClick}
+                            className="block w-full px-5 py-3 text-gray-700 hover:bg-orange-600 hover:text-white transition-all duration-300"
+                          >
+                            {dropdownItem.title}
+                          </Link>
+                        )}
+
+                        {/* Sub-dropdown Menu */}
+                        {dropdownItem.hasSubDropdown && openSubDropdown === dropdownItem.title && (
+                          <motion.div 
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="absolute left-full top-0 bg-white border border-gray-200 shadow-lg z-50 w-60 py-1"
+                          >
+                            {dropdownItem.subDropdownItems.map((subItem) => (
+                              <Link
+                                key={subItem.path}
+                                to={subItem.path}
+                                onClick={handleDropdownItemClick}
+                                className="block w-full px-5 py-3 text-gray-700 hover:bg-orange-600 hover:text-white transition-all duration-300"
+                              >
+                                {subItem.title}
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </div>
                     ))}
                   </motion.div>
                 )}
@@ -209,7 +318,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu with PSI style */}
+      {/* Mobile Menu */}
       <motion.div
         initial={{ height: 0, opacity: 0 }}
         animate={{ 
@@ -226,23 +335,27 @@ const Header = () => {
                 {item.hasDropdown ? (
                   <motion.div>
                     <button
-                      onClick={() => setOpenDropdown(openDropdown === item.title ? null : item.title)}
-                      className={`w-full flex items-center justify-between py-2 ${
+                      onClick={() => handleMenuItemClick(item.title)}
+                      className={`w-full flex items-center justify-between py-2 group ${
                         location.pathname === item.path || 
                         (item.path !== '/' && location.pathname.startsWith(item.path))
                           ? 'text-orange-600 font-medium'
                           : 'text-gray-800'
                       }`}
                     >
-                      {item.title}
+                      <span className="group-hover:text-orange-600 transition-colors duration-300">
+                        {item.title}
+                      </span>
                       <motion.div
                         animate={{ rotate: openDropdown === item.title ? 180 : 0 }}
                         transition={{ duration: 0.2 }}
+                        className="group-hover:text-orange-600 transition-colors duration-300"
                       >
                         <FaChevronDown size={14} />
                       </motion.div>
                     </button>
                     
+                    {/* Mobile Main Dropdown */}
                     {openDropdown === item.title && (
                       <motion.div
                         initial={{ height: 0, opacity: 0 }}
@@ -252,13 +365,58 @@ const Header = () => {
                       >
                         <div className="pl-4 pt-2 space-y-2">
                           {item.dropdownItems.map((dropdownItem) => (
-                            <Link
-                              key={dropdownItem.path}
-                              to={dropdownItem.path}
-                              className="block py-2 text-sm text-gray-700"
-                            >
-                              {dropdownItem.title}
-                            </Link>
+                            <div key={dropdownItem.path}>
+                              {dropdownItem.hasSubDropdown ? (
+                                <div>
+                                  <button
+                                    onClick={(e) => handleSubDropdownClick(e, dropdownItem.title)}
+                                    className="w-full flex items-center justify-between py-2 text-sm text-gray-700 hover:text-orange-600 transition-colors duration-300 group"
+                                  >
+                                    <span className="group-hover:text-orange-600 transition-colors duration-300">
+                                      {dropdownItem.title}
+                                    </span>
+                                    <motion.div
+                                      animate={{ rotate: openSubDropdown === dropdownItem.title ? 180 : 0 }}
+                                      transition={{ duration: 0.2 }}
+                                      className="group-hover:text-orange-600 transition-colors duration-300"
+                                    >
+                                      <FaChevronDown size={12} />
+                                    </motion.div>
+                                  </button>
+                                  
+                                  {/* Mobile Sub Dropdown */}
+                                  {openSubDropdown === dropdownItem.title && (
+                                    <motion.div
+                                      initial={{ height: 0, opacity: 0 }}
+                                      animate={{ height: 'auto', opacity: 1 }}
+                                      transition={{ duration: 0.2 }}
+                                      className="overflow-hidden"
+                                    >
+                                      <div className="pl-4 pt-2 space-y-2">
+                                        {dropdownItem.subDropdownItems.map((subItem) => (
+                                          <Link
+                                            key={subItem.path}
+                                            to={subItem.path}
+                                            onClick={handleDropdownItemClick}
+                                            className="block py-2 text-xs text-gray-600 hover:text-orange-600 transition-colors duration-300"
+                                          >
+                                            {subItem.title}
+                                          </Link>
+                                        ))}
+                                      </div>
+                                    </motion.div>
+                                  )}
+                                </div>
+                              ) : (
+                                <Link
+                                  to={dropdownItem.path}
+                                  onClick={handleDropdownItemClick}
+                                  className="block w-full py-2 text-sm text-gray-700 hover:text-orange-600 transition-colors duration-300"
+                                >
+                                  {dropdownItem.title}
+                                </Link>
+                              )}
+                            </div>
                           ))}
                         </div>
                       </motion.div>
@@ -267,7 +425,7 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className={`py-2 ${
+                    className={`py-2 block w-full hover:text-orange-600 transition-colors duration-300 ${
                       location.pathname === item.path || 
                       (item.path !== '/' && location.pathname.startsWith(item.path))
                         ? 'text-orange-600 font-medium'

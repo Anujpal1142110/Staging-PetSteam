@@ -232,13 +232,15 @@ const ContactPage = () => {
             image: Manish,
             email: "manish.kaushik@petstream.in"
           },
-          {
-            name: "AMBUJ KUMAR SHUKLA",
-            position: "Business Development Manager – Export Business",
-            phone: "+91 9811906327",
-            image: Ambuj,
-            email: "ambuj.shukla@petstream.in"
-          }
+          
+             {
+            name: "SAURABH TYAGI",
+            position: "Admin, Purchase & Supply Chain Head",
+            phone: "+91 9899896260",
+            image: Saurabh,
+            email: "mailto:saurabh.tyagi@petstream.in"
+          },
+    
         ].map((member, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
             <div className="relative h-60">
@@ -272,36 +274,7 @@ const ContactPage = () => {
       </div>
 
       {/* Fourth Member - Centered */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:max-w-[66.67%] md:mx-auto mb-16">
-        <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden md:col-start-2">
-          <div className="relative h-60">
-            <img 
-              src={Saurabh} 
-              alt="SAURABH TYAGI" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="p-6 text-center">
-            <h4 className="text-lg font-bold text-red-600 mb-2">SAURABH TYAGI</h4>
-            <p className="text-gray-600 mb-4">Regional Sales Manager - India and SAARC Region</p>
-            <div className="space-y-3">
-              <div className="flex items-center justify-center gap-2">
-                <span className="text-blue-600">Tel :</span>
-                <span className="text-gray-700">+91 9899896260</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <a href="mailto:saurabh.tyagi@petstream.in" className="hover:opacity-80">
-                  <img 
-                    src={mailIcon} 
-                    alt="mail" 
-                    className="w-8 h-8"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       {/* Second Row - Middle Aligned */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:max-w-[66.67%] md:mx-auto mb-16">

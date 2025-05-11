@@ -32,6 +32,15 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },
+      animation: {
+        'scroll': 'scroll 60s linear infinite', // Increased from 30s to 60s for slower scrolling
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      }
     },
   },
   plugins: [],

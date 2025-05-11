@@ -6,7 +6,7 @@ import img5 from '../../src/assets/images/Drying-dehumidification-system.jpg';
 import img6 from '../../src/assets/images/caps-closures-mold.jpg';
 
 
-const servicesData = [
+const partnerData = [
   {
     id: 1,
     title: "Injection Molding Machine",
@@ -69,4 +69,4 @@ const servicesData = [
   }
  
 ];
-export default servicesData;
+export default partnerData;

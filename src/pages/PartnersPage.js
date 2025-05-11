@@ -3,7 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import { FaLightbulb, FaTools, FaFire, FaCalendarCheck, FaSearchPlus, FaWrench, FaRocket } from 'react-icons/fa';
 import servicesData from '../data/services';
-const ServicesPage = () => {
+import companyData from '../data/company';
+import partnerData from '../data/partners';
+
+const PartnerPage = () => {
   // Map icon names to components
   // const getIcon = (iconName) => {
   //   switch(iconName) {
@@ -243,4 +246,4 @@ const ServicesPage = () => {
   );
 };
 
-export default ServicesPage;
+export default PartnerPage;
