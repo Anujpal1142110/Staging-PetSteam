@@ -12,21 +12,17 @@ const HowWeWork = () => {
   return (
     <>
       {/* Hero Banner Section */}
-      <section
-        className="relative py-32 bg-gradient-to-r from-blue-900 to-blue-700 text-white"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${heroImg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">How we work</h1>
-          <p className="text-xl max-w-3xl mx-auto opacity-90">
-            Trust in how we work
-          </p>
-        </div>
-      </section>
+<section
+  className="relative bg-fixed bg-center bg-cover h-64 md:h-96"
+  style={{ backgroundImage: `url(${heroImg})` }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <h1 className="text-white text-3xl md:text-5xl font-bold">
+      Beverage Filling
+    </h1>
+  </div>
+</section>
+
 
       {/* Main Content */}
       <section className="py-16">
@@ -49,28 +45,25 @@ const HowWeWork = () => {
           {/* Four Steps Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
             {/* Step 1: Analyse */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src={analyseImg} 
-                alt="Analyse" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+              <div className="p-6 md:w-2/3">
                 <h3 className="text-2xl font-bold mb-4">Analyse</h3>
                 <p className="text-gray-700 mb-4">
                   We analyse your project in depth so we truly understand your vision.
                 </p>
               </div>
+              <div className="md:w-1/3">
+                <img 
+                  src={analyseImg} 
+                  alt="Analyse" 
+                  className="w-full h-64 md:h-auto object-cover"
+                />
+              </div>
             </div>
 
             {/* Step 2: Advise */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src={adviseImg} 
-                alt="Advise" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+              <div className="p-6 md:w-2/3 order-2 md:order-1">
                 <h3 className="text-2xl font-bold mb-4">Advise</h3>
                 <p className="text-gray-700 mb-4">
                   Petstream scopes and scrutinises your project then recommends the equipment, 
@@ -78,88 +71,75 @@ const HowWeWork = () => {
                   product design and development.
                 </p>
               </div>
+              <div className="md:w-1/3 order-1 md:order-2">
+                <img 
+                  src={adviseImg} 
+                  alt="Advise" 
+                  className="w-full h-64 md:h-auto object-cover"
+                />
+              </div>
             </div>
 
             {/* Step 3: Implement */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src={implementImg} 
-                alt="Implement" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+              <div className="p-6 md:w-2/3">
                 <h3 className="text-2xl font-bold mb-4">Implement</h3>
-                <p className="text-gray-700 mb-4">
-                  Down to business, down to the last detail:
-                </p>
+                <p className="text-gray-700 mb-4">Down to business, down to the last detail:</p>
                 <ul className="text-gray-700 space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Project management</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Scope of work documentation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Material & logistics</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Timelines</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Change management</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Step by step log</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Installation & commissioning</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Factory, mould & documentation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Global certification sign-off</span>
-                  </li>
+                  {[
+                    'Project management',
+                    'Scope of work documentation',
+                    'Material & logistics',
+                    'Timelines',
+                    'Change management',
+                    'Step by step log',
+                    'Installation & commissioning',
+                    'Factory, mould & documentation',
+                    'Global certification sign-off'
+                  ].map(item => (
+                    <li key={item} className="flex items-start">
+                      <span className="text-orange-500 mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
+              </div>
+              <div className="md:w-1/3">
+                <img 
+                  src={implementImg} 
+                  alt="Implement" 
+                  className="w-full h-64 md:h-auto object-cover"
+                />
               </div>
             </div>
 
             {/* Step 4: Support */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src={supportImg} 
-                alt="Support" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+              <div className="p-6 md:w-2/3 order-2 md:order-1">
                 <h3 className="text-2xl font-bold mb-4">Support</h3>
                 <p className="text-gray-700 mb-4">
                   You're never alone. Petstream is a true partner, supporting your business with 
                   factory-certified, European-trained technicians.
                 </p>
                 <ul className="text-gray-700 space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Predictive / Scheduled maintenance Programs</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Emergency Maintenance</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>Process Training</span>
-                  </li>
+                  {[
+                    'Predictive / Scheduled maintenance Programs',
+                    'Emergency Maintenance',
+                    'Process Training'
+                  ].map(item => (
+                    <li key={item} className="flex items-start">
+                      <span className="text-orange-500 mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
+              </div>
+              <div className="md:w-1/3 order-1 md:order-2">
+                <img 
+                  src={supportImg} 
+                  alt="Support" 
+                  className="w-full h-64 md:h-auto object-cover"
+                />
               </div>
             </div>
           </div>

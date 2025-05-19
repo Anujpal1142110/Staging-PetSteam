@@ -17,13 +17,30 @@ const DryingSystem = () => {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative py-20">
+      {/* <section className="relative py-20">
         <img 
           src={eisbarBanner} 
           alt="EISBAR Banner" 
           className="w-full h-auto"
         />
-      </section>
+      </section> */}
+
+            <section
+              className="relative py-32 bg-gradient-to-r from-blue-900 to-blue-700 text-white"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${eisbarBanner})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundAttachment: 'fixed'
+              }}
+            >
+              <div className="container mx-auto px-4 text-center">
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">EISBAR</h1>
+                <p className="text-xl max-w-3xl mx-auto opacity-90">
+                Sustainable systems for the Plastics Industry
+                </p>
+              </div>
+            </section>
 
       {/* Company Introduction */}
       <section className="py-16">

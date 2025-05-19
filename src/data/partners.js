@@ -1,9 +1,9 @@
-import img1 from '../../src/assets/images/Injection-molding-machine.png';
-import img2 from '../../src/assets/images/Pet-beverage-filling-line.png';
-import img3 from '../../src/assets/images/pet-preforn-mold.png';
-import img4 from '../../src/assets/images/PET-material-lab-equipment.jpg';
-import img5 from '../../src/assets/images/Drying-dehumidification-system.jpg';
-import img6 from '../../src/assets/images/caps-closures-mold.jpg';
+import img1 from '../../src/assets/partner/p1.jpg';
+import img2 from '../../src/assets/partner/p2.jpg';
+import img3 from '../../src/assets/partner/p3.jpg';
+import img4 from '../../src/assets/partner/p4.jpg';
+import img5 from '../../src/assets/partner/p5.jpg';
+import img6 from '../../src/assets/partner/p6.jpg';
 
 
 const partnerData = [

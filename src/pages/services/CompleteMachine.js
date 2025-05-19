@@ -3,25 +3,18 @@ import trainingBg from '../../assets/images/n-logistic.jpg';
 const ProjectDesign = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Banner */}
-      <section className="relative">
-  
-          <img 
-          src={trainingBg} 
-          alt="Company Update Banner" 
-          className="w-full h-96 object-cover"
-        />
+      {/* Hero Banner Section */}
+<section
+  className="relative bg-fixed bg-center bg-cover h-64 md:h-96"
+  style={{ backgroundImage: `url(${trainingBg})` }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <h1 className="text-white text-3xl md:text-5xl font-bold">
+      Beverage Filling
+    </h1>
+  </div>
+</section>
 
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="absolute inset-0 container mx-auto px-4 h-full flex flex-col items-center justify-center text-center">
-          <h1 className="text-4xl font-bold text-white mb-2">Complete Machine Refurbishment Services & Health Checkup</h1>
-          <div className="flex items-center text-white">
-            <a href="/" className="hover:text-gray-200">Home</a>
-            <span className="mx-2">›</span>
-            <span>Complete Machine Refurbishment Services & Health Checkup</span>
-          </div>
-        </div>
-      </section>
 
       {/* Main Content */}
       <div className="py-8 flex-grow bg-white">

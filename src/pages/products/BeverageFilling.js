@@ -14,20 +14,23 @@ const BeverageFilling = () => {
 
   return (
     <>
-      {/* Hero Banner Section */}
-      <section className="relative py-20">
-        <img 
-          src={img7} 
-          alt="NewamStar Banner" 
-          className="w-full h-auto"
-        />
-      </section>
+     {/* Hero Banner Section */}
+<section
+  className="relative bg-fixed bg-center bg-cover h-64 md:h-96"
+  style={{ backgroundImage: `url(${img7})` }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <h1 className="text-white text-3xl md:text-5xl font-bold">
+      Beverage Filling
+    </h1>
+  </div>
+</section>
 
       {/* Partner Information Section */}
       <section className="py-10">
         <div className="container mx-auto px-4">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-uppercase mb-4">Newamstar –</h2>
+            <h2 className="text-3xl font-bold uppercase mb-4">Newamstar –</h2>
             <p className="text-gray-700 mb-4 leading-relaxed">
               Newamstar is a company focusing on integrated solutions for smart factories of liquid products. We as the sales and Service partner of Newamstar for Indian market committed to providing comprehensive services for smart factories with production and storage integrated solutions.
             </p>
@@ -42,46 +45,20 @@ const BeverageFilling = () => {
       <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold mb-8">We with our Partner offer –</h2>
-          
+
           {/* Combiblock Section */}
           <div className="flex flex-col md:flex-row items-center mb-12 bg-white p-6 rounded-lg shadow-md">
             <div className="md:w-2/3 md:pr-8 mb-6 md:mb-0">
               <h3 className="text-xl font-bold text-blue-800 mb-3">Combiblock</h3>
               <ul className="mb-4 space-y-2">
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Starbloc</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Bottled Water Combiblock</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Big-Container Combiblock</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Aseptic Combiblock</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Ultra-clean Combiblock</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">CSD Combiblock</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Hot-fill Combiblock</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Non-beverage Combiblock</span>
-                </li>
+                {['Starbloc','Bottled Water Combiblock','Big-Container Combiblock','Aseptic Combiblock','Ultra-clean Combiblock','CSD Combiblock','Hot-fill Combiblock','Non-beverage Combiblock'].map(item => (
+                  <li key={item} className="flex items-start">
+                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
               </ul>
-              <Link 
+              <Link
                 to="/products/combiblock"
                 className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
@@ -89,40 +66,34 @@ const BeverageFilling = () => {
               </Link>
             </div>
             <div className="md:w-1/3">
-              <img 
-                src={img1} 
-                alt="Combiblock System" 
+              <img
+                src={img1}
+                alt="Combiblock System"
                 className="w-full h-auto rounded shadow"
               />
             </div>
           </div>
-          
+
           {/* Blowing System */}
           <div className="flex flex-col md:flex-row items-center mb-12 bg-white p-6 rounded-lg shadow-md">
             <div className="md:w-1/3 md:order-1 md:pl-8 mb-6 md:mb-0 order-2">
-              <img 
-                src={img2} 
-                alt="Blowing System" 
+              <img
+                src={img2}
+                alt="Blowing System"
                 className="w-full h-auto rounded shadow"
               />
             </div>
             <div className="md:w-2/3 order-1 md:order-2">
               <h3 className="text-xl font-bold text-blue-800 mb-3">Blowing System</h3>
               <ul className="mb-4 space-y-2">
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Bottle Blower</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Big-container Blower</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Gallon Blower</span>
-                </li>
+                {['Bottle Blower','Big-container Blower','Gallon Blower'].map(item => (
+                  <li key={item} className="flex items-start">
+                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
               </ul>
-              <Link 
+              <Link
                 to="/products/blowing-system"
                 className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
@@ -130,59 +101,28 @@ const BeverageFilling = () => {
               </Link>
             </div>
           </div>
-          
+
           {/* Filling System */}
           <div className="flex flex-col md:flex-row items-center mb-12 bg-white p-6 rounded-lg shadow-md">
             <div className="md:w-2/3 md:pr-8 mb-6 md:mb-0">
               <h3 className="text-xl font-bold text-blue-800 mb-3">Filling System</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Aseptic Filling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Ultra-clean Filling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Hot Filling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Water Filling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Gallon-Water Filling</span>
-                  </li>
-                </ul>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">CSD Filling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Liquor Filling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Condiment Filling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Edible Oil Filling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Daily Chemical Product Filling</span>
-                  </li>
-                </ul>
+                {[
+                  ['Aseptic Filling','Ultra-clean Filling','Hot Filling','Water Filling','Gallon-Water Filling'],
+                  ['CSD Filling','Liquor Filling','Condiment Filling','Edible Oil Filling','Daily Chemical Product Filling']
+                ].map((col, i) => (
+                  <ul key={i} className="space-y-2">
+                    {col.map(item => (
+                      <li key={item} className="flex items-start">
+                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <span className="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ))}
               </div>
               <div className="mt-4">
-                <Link 
+                <Link
                   to="/products/filling-system"
                   className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
                 >
@@ -191,81 +131,42 @@ const BeverageFilling = () => {
               </div>
             </div>
             <div className="md:w-1/3">
-              <img 
-                src={img3} 
-                alt="Filling System" 
+              <img
+                src={img3}
+                alt="Filling System"
                 className="w-full h-auto rounded shadow"
               />
             </div>
           </div>
-          
+
           {/* Secondary Packaging System */}
           <div className="flex flex-col md:flex-row items-center mb-12 bg-white p-6 rounded-lg shadow-md">
             <div className="md:w-1/3 md:order-1 md:pl-8 mb-6 md:mb-0 order-2">
-              <img 
-                src={img4} 
-                alt="Secondary Packaging System" 
+              <img
+                src={img4}
+                alt="Secondary Packaging System"
                 className="w-full h-auto rounded shadow"
               />
             </div>
             <div className="md:w-2/3 order-1 md:order-2">
               <h3 className="text-xl font-bold text-blue-800 mb-3">Secondary Packaging System</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Conveyor System</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Bottle Warmer</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Bottle Tilting System</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Shower Cooling Tunnel</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Labeler</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Film Wrapper</span>
-                  </li>
-                </ul>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Carton Wrapper</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Starpack</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Sorting Robot</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Robot Encaser</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Robot Palletizer</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
-                    <span className="text-gray-700">Mechanical Palletizer</span>
-                  </li>
-                </ul>
+                {[
+                  ['Conveyor System','Bottle Warmer','Bottle Tilting System','Shower Cooling Tunnel','Labeler','Film Wrapper'],
+                  ['Carton Wrapper','Starpack','Sorting Robot','Robot Encaser','Robot Palletizer','Mechanical Palletizer']
+                ].map((col, i) => (
+                  <ul key={i} className="space-y-2">
+                    {col.map(item => (
+                      <li key={item} className="flex items-start">
+                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <span className="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ))}
               </div>
               <div className="mt-4">
-                <Link 
+                <Link
                   to="/products/secondary-packaging-system"
                   className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
                 >
@@ -274,30 +175,20 @@ const BeverageFilling = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Intelligent Logistics */}
           <div className="flex flex-col md:flex-row items-center mb-12 bg-white p-6 rounded-lg shadow-md">
             <div className="md:w-2/3 md:pr-8 mb-6 md:mb-0">
               <h3 className="text-xl font-bold text-blue-800 mb-3">Intelligent Logistics</h3>
               <ul className="mb-4 space-y-2">
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Intelligent Warehouse</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">RGV(Rail Guided Vehicle)</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">AGV(Automated Guided Vehicle)</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">WMS(Warehouse Management System)</span>
-                </li>
+                {['Intelligent Warehouse','RGV (Rail Guided Vehicle)','AGV (Automated Guided Vehicle)','WMS (Warehouse Management System)'].map(item => (
+                  <li key={item} className="flex items-start">
+                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
               </ul>
-              <Link 
+              <Link
                 to="/products/intelligent-logistics"
                 className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
@@ -305,56 +196,34 @@ const BeverageFilling = () => {
               </Link>
             </div>
             <div className="md:w-1/3">
-              <img 
-                src={img5} 
-                alt="Intelligent Logistics" 
+              <img
+                src={img5}
+                alt="Intelligent Logistics"
                 className="w-full h-auto rounded shadow"
               />
             </div>
           </div>
-          
+
           {/* Pretreatment System */}
           <div className="flex flex-col md:flex-row items-center mb-12 bg-white p-6 rounded-lg shadow-md">
             <div className="md:w-1/3 md:order-1 md:pl-8 mb-6 md:mb-0 order-2">
-              <img 
-                src={img6} 
-                alt="Pretreatment System" 
+              <img
+                src={img6}
+                alt="Pretreatment System"
                 className="w-full h-auto rounded shadow"
               />
             </div>
             <div className="md:w-2/3 order-1 md:order-2">
               <h3 className="text-xl font-bold text-blue-800 mb-3">Pretreatment System</h3>
               <ul className="mb-4 space-y-2">
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Water Treatment System</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Processing System</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">UHT System</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">CIP System</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">COP/SOP System</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Disinfectant Blending System</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700">Carbon Mixer</span>
-                </li>
+                {['Water Treatment System','Processing System','UHT System','CIP System','COP/SOP System','Disinfectant Blending System','Carbon Mixer'].map(item => (
+                  <li key={item} className="flex items-start">
+                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
               </ul>
-              <Link 
+              <Link
                 to="/products/pretreatment-system"
                 className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
@@ -364,80 +233,59 @@ const BeverageFilling = () => {
           </div>
         </div>
       </section>
-      
-      {/* What Make Us Different Section with Tabs */}
+
+      {/* What Makes Us Different Section with Tabs */}
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-gray-700 text-uppercase">WHAT MAKE US DIFFERENT?</h2>
-          
+          <h2 className="text-3xl font-bold mb-8 text-gray-700 uppercase">WHAT MAKES US DIFFERENT?</h2>
+
           {/* Tabs */}
           <div className="flex flex-wrap mb-8">
-            <button 
-              className={`py-3 px-6 font-medium ${activeTab === 'main' 
-                ? 'border border-orange-500 text-orange-600 bg-white' 
-                : 'text-gray-600 hover:text-orange-500'}`}
+            <button
+              className={`py-3 px-6 font-medium ${
+                activeTab === 'main'
+                  ? 'border border-orange-500 text-orange-600 bg-white'
+                  : 'text-gray-600 hover:text-orange-500'
+              }`}
               onClick={() => setActiveTab('main')}
             >
               Jiansu Newamstar Packaging Machinery Company, limited
             </button>
           </div>
-          
-          <div className="border-t border-gray-200 mb-6"></div>
-          
+
+          <div className="border-t border-gray-200 mb-6" />
+
           {/* Main Benefits */}
           {activeTab === 'main' && (
-            <div>
-              <ul className="space-y-6">
-                <li className="flex items-start">
+            <ul className="space-y-6">
+              {[
+                'Newamstar is devoted in providing customized production and storage integrated turn-key solution and all kinds of beverage product packaging solution for global customers.',
+                'Leading supplier in liquid packaging industry in the world.',
+                'Wide Service Network and spare part Supply.',
+                'Approved by Major Beverage Industry Leaders.',
+                'Best price to performance machine offering',
+                'Offer short delivery of Machines & Complete solutions',
+                '32+ years of expertise in liquid filling line system',
+                'Technology leader in Aseptic filling line',
+                'Secondary line equipment can be developed and customized as per customer need',
+                'Newamstar offers lowest cost of machine maintenance'
+              ].map((text, i) => (
+                <li key={i} className="flex items-start">
                   <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Newamstar is devoted in providing customized production and storage integrated turn-key solution and all kinds of beverage product packaging solution for global customers.</span>
+                  <span className="text-gray-700 leading-relaxed">{text}</span>
                 </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Leading supplier in liquid packaging industry in the world.</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Wide Service Network and spare part Supply.</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Approved by Major Beverage Industry Leaders.</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Best price to performance machine offering</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Offer short delivery of Machines & Complete solutions</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">32+ years of expertise in liquid filling line system</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Technology leader in Aseptic filling line</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Secondery line equipment can be developed and customized as per customer need</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
-                  <span className="text-gray-700 leading-relaxed">Newamstar offers lowest cost of machine maintenance</span>
-                </li>
-              </ul>
-            </div>
+              ))}
+            </ul>
           )}
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-16 bg-orange-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Upgrade Your Manufacturing Capabilities?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Upgrade Your Manufacturing Capabilities?
+          </h2>
           <p className="text-xl max-w-3xl mx-auto mb-8">
             Contact our team to learn more about our NewamStar systems and how they can enhance your production processes.
           </p>

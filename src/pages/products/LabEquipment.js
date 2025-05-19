@@ -17,14 +17,17 @@ const LabEquipment = () => {
 
   return (
     <>
-      {/* Hero Banner */}
-      <section className="relative py-20">
-        <img 
-          src={zonwoBanner} 
-          alt="ZONWON Banner" 
-          className="w-full h-auto"
-        />
-      </section>
+      {/* Hero Banner Section */}
+<section
+  className="relative bg-fixed bg-center bg-cover h-64 md:h-96"
+  style={{ backgroundImage: `url(${zonwoBanner})` }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <h1 className="text-white text-3xl md:text-5xl font-bold">
+      Beverage Filling
+    </h1>
+  </div>
+</section>
 
       {/* Company Introduction */}
       <section className="py-16">
