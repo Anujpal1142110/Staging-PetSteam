@@ -4,6 +4,8 @@ import img3 from '../../src/assets/images/pet-preforn-mold.png';
 import img4 from '../../src/assets/images/PET-material-lab-equipment.jpg';
 import img5 from '../../src/assets/images/Drying-dehumidification-system.jpg';
 import img6 from '../../src/assets/images/caps-closures-mold.jpg';
+import img7 from '../../src/assets/images/Medical-pharma-paxkaging-mold.jpg';
+import img8 from '../../src/assets/images/Liquid-coloront-and-additives.png';
 
 
 const servicesData = [
@@ -66,7 +68,27 @@ const servicesData = [
     image: img6,
     isFeatured: true,
     displayOrder: 6
+  },
+  {
+    id: 7,
+    title: "Packaging Mold",
+    slug: "packaging-mold",
+    shortDescription: "Precision manufacturing molds for diverse packaging solutions.",
+    description: "Our packaging molds are designed for producing high-quality containers and packaging components with exceptional precision and consistency. These molds feature advanced cooling systems and optimized flow paths to ensure consistent quality and maximum productivity for various packaging applications.",
+    image: img7,
+    isFeatured: true,
+    displayOrder: 7
+  },
+  {
+    id: 8,
+    title: "Liquid Colorant & Additives",
+    slug: "liquid-colorant-additives",
+    shortDescription: "High-quality colorants and performance additives for plastic products.",
+    description: "Our premium liquid colorants and additives are formulated to enhance the appearance and performance of plastic products. These specialty materials provide consistent color dispersion, UV protection, and other functional properties while maintaining processing efficiency and end-product quality.",
+    image: img8,
+    isFeatured: true,
+    displayOrder: 8
   }
- 
 ];
+
 export default servicesData;

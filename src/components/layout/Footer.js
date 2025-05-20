@@ -18,9 +18,9 @@ const Footer = () => {
     <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white">
       <div className="container mx-auto px-4 pt-16 pb-8">
         {/* Top wave separator */}
-        <div className="w-full h-6 mb-12 relative overflow-hidden">
+        {/* <div className="w-full h-6 mb-12 relative overflow-hidden">
           <div className="absolute w-full h-full bg-primary-500 opacity-20 rounded-full -top-4 transform scale-x-150"></div>
-        </div>
+        </div> */}
         
         {/* Company logo section */}
         <div className="flex flex-col items-center mb-12">
