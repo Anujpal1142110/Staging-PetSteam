@@ -165,11 +165,10 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-          <div className="bg-white rounded-md shadow-sm p-1 border border-gray-50">
-  <img src={logo} alt="PSI Logo" className="h-11" />
-</div>
-          </Link>
+        
+      <Link to="/" className="flex items-center">
+        <img src={logo} alt="PSI Logo" className="h-11" />
+      </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
