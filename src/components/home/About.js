@@ -1,3 +1,4 @@
+// File: components/home/About.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import companyData from '../../data/company';
@@ -11,12 +12,12 @@ const About = () => {
           <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12 order-2 lg:order-1">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">About Our Company</h2>
             <div dangerouslySetInnerHTML={{ __html: companyData.history }} className="text-gray-600 mb-6 leading-relaxed" />
-            <Link 
+            {/* <Link 
               to="/about" 
               className="btn btn-primary"
             >
               Learn More About Us
-            </Link>
+            </Link> */}
           </div>
           
           {/* YouTube video embed - Now Second */}
@@ -38,22 +39,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        
-        {/* Alternative option: Full-width video below content (like in the screenshot) */}
-        {/* 
-        <div className="mt-12">
-          <iframe
-            width="100%"
-            height="500"
-            src="https://www.youtube.com/embed/eIvSqklTqyE?si=hnlVEmynvN5s4zVp"
-            title="PET Stream Company Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="rounded-lg shadow-md"
-          ></iframe>
-        </div>
-        */}
       </div>
     </section>
   );

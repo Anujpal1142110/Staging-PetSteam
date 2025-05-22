@@ -113,7 +113,7 @@ const PetPreformMold = () => {
                     Neck finishes: φ28mm (1716、1810 and 1881), 26/22、29/25、30/25 and φ38mm etc.<br />
                     Applied to: HUSKY、UNIQUE、NETSTAL(and KM)、KATA
                   </p>
-                  <button className="bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300">
+                  <button className="bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300">
                     Get In Touch
                   </button>
                 </div>
@@ -137,7 +137,7 @@ const PetPreformMold = () => {
                     Different brands of two-step blow molding machines such as SIDEL, KRONES, KHS, TECH-LONGM, and NEWAMSTAR;<br />
                     Different brands of one-step blow molding machines such as SIPA, ASB, and AOKI;
                   </p>
-                  <button className="bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300">
+                  <button className="bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300">
                     Get In Touch
                   </button>
                 </div>
@@ -159,7 +159,7 @@ const PetPreformMold = () => {
                     Various types of beverages such as water, juice, and tea, CSD soft drinks,<br />
                     Edible oil, cosmetics, health-care products, pharmaceutical and food etc.
                   </p>
-                  <button className="bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300">
+                  <button className="bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300">
                     Get In Touch
                   </button>
                 </div>
@@ -181,7 +181,7 @@ const PetPreformMold = () => {
                     Suitable for preform injection machine and closure injection machine such as Husky, Netstal, KM and SIPA etc.<br />
                     The largest capacity of preform injection mold is 144 cavities, the largest capacity of closure injection mold is 96 cavities.
                   </p>
-                  <button className="bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300">
+                  <button className="bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300">
                     Get In Touch
                   </button>
                 </div>
@@ -211,16 +211,16 @@ const PetPreformMold = () => {
               <div className="flex flex-wrap border-b border-gray-200 mb-8">
                 <button 
                   className={`py-3 px-6 font-medium ${activeInfoTab === 'company' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveInfoTab('company')}
                 >
                   GDXL Precise Machinery Company
                 </button>
                 <button 
                   className={`py-3 px-6 font-medium ${activeInfoTab === 'preform' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveInfoTab('preform')}
                 >
                   GDXL Preform Mold
@@ -232,31 +232,31 @@ const PetPreformMold = () => {
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">High-tech enterprise of molding equipment & service to the PET plastic industry</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Founded in 1993 with its own R&D, developing over 2000 projects per year</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">60,000+ cavities of GDXL molds applied globally</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Devoted, trustworthy, respected partner for our customers</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">One of the best PET mold suppliers in the world</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">High efficiency and long mold life as key features</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Lowest cycle time on NETSTAL machines for any preform size</span>
                     </li>
                   </ul>
@@ -271,35 +271,35 @@ const PetPreformMold = () => {
                   </h5>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">No crystallinity or scratches</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Minimal eccentricity</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">High surface quality</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">High stability</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Low Acetaldehyde (AA) level</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Maximum energy effectiveness</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Constant weight</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Seamless parting lines</span>
                     </li>
                   </ul>
@@ -315,24 +315,24 @@ const PetPreformMold = () => {
               <div className="flex flex-wrap border-b border-gray-200 mb-8">
                 <button 
                   className={`py-3 px-6 font-medium ${activeTab === 'features' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveTab('features')}
                 >
                   Key Features
                 </button>
                 <button 
                   className={`py-3 px-6 font-medium ${activeTab === 'applications' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveTab('applications')}
                 >
                   Applications
                 </button>
                 <button 
                   className={`py-3 px-6 font-medium ${activeTab === 'specifications' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveTab('specifications')}
                 >
                   Technical Specifications
@@ -370,7 +370,7 @@ const PetPreformMold = () => {
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link 
                   to="/contact"
-                  className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
+                  className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
                 >
                   Request a Quote
                 </Link>

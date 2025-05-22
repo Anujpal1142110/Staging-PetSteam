@@ -43,7 +43,7 @@ const ApplicationSupport = () => {
 
             {/* Sidebar */}
             <div className="md:w-1/3">
-              <div className="bg-orange-500 p-6">
+              <div className="bg-green-500 p-6">
                 <h3 className="text-xl font-bold text-center text-white mb-4">Application Support</h3>
                 <p className="text-white">
                   We are here to troubleshoot and help you through any issues you experience from a production or new tool standpoint. The application support team can also help you to identify inefficiencies, can offer product optimization and process training get the most out of your machinery and maximize your production process.

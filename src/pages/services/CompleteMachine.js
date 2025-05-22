@@ -42,7 +42,7 @@ const ProjectDesign = () => {
 
             {/* Sidebar */}
             <div className="md:w-1/3">
-              <div className="bg-orange-500 p-6">
+              <div className="bg-green-500 p-6">
                 <h3 className="text-xl font-bold text-center text-white mb-4">Complete Machine Refurbishment Services & Health Checkup</h3>
                 <p className="text-white">
                  We offer Services for your old HUSKY, SACMI, NETSTAL PET-LINE, and closures machines refurbishment, retrofitting and life cycle upgradation, Our fleet of experienced service engineers spread across India and in African continent offer value-adding services.

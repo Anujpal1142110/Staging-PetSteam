@@ -16,7 +16,7 @@ const FillingSystem = () => {
               </p>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
               >
                 Request a Quote
               </Link>
@@ -51,19 +51,19 @@ const FillingSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Production capacity: Up to 48,000 BPH</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Advanced sterilization systems for bottles, caps, and filling environment</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">HEPA filtration and positive air pressure systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Hydrogen peroxide or peracetic acid sterilization options</span>
                   </li>
                 </ul>
@@ -76,15 +76,15 @@ const FillingSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Clean room environment with HEPA filtration</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">UV sterilization for caps and bottle necks</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Extended shelf life up to 30-90 days depending on product</span>
                   </li>
                 </ul>
@@ -97,15 +97,15 @@ const FillingSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Precise temperature control systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Special handling for heat-sensitive bottles</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Integrated cooling tunnels available</span>
                   </li>
                 </ul>
@@ -118,15 +118,15 @@ const FillingSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Production speeds up to 72,000 BPH</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Electronic flow meters for precision filling</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Clean-in-Place (CIP) systems</span>
                   </li>
                 </ul>
@@ -146,15 +146,15 @@ const FillingSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Counter-pressure filling technology</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Advanced CO2 management systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Minimal product loss and foam generation</span>
                   </li>
                 </ul>
@@ -195,35 +195,35 @@ const FillingSystem = () => {
               <h3 className="text-2xl font-semibold mb-4 text-blue-800">Key Features & Advantages</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Precision Filling</h4>
                     <p className="text-gray-700">Electronic flow meters and level sensors ensure accurate fill volumes with minimal variation.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Hygienic Design</h4>
                     <p className="text-gray-700">All systems feature sanitary designs with FDA-approved materials and CIP/SIP capabilities.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Flexibility</h4>
                     <p className="text-gray-700">Quick changeover capabilities for different bottle sizes and product types.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Advanced Control Systems</h4>
                     <p className="text-gray-700">User-friendly HMI interfaces with comprehensive monitoring and control of all filling parameters.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Integration Capabilities</h4>
                     <p className="text-gray-700">Seamless integration with blowing, capping, and secondary packaging systems.</p>
@@ -286,7 +286,7 @@ const FillingSystem = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Request a Consultation
             </Link>

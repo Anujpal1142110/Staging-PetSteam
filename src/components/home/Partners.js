@@ -69,7 +69,7 @@ const Partners = () => {
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800">Our Partners</h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-green-500 mx-auto mt-6"></div>
         </motion.div>
 
         {/* Description */}
@@ -147,7 +147,7 @@ const Partners = () => {
         </div>
 
         {/* View All */}
-        <motion.div
+        {/* <motion.div
           className="text-center mt-12"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
@@ -155,12 +155,14 @@ const Partners = () => {
         >
           <Link
             to="/Partners"
-            className="relative inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg overflow-hidden transition-all duration-300"
+            className="inline-block bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg transition-colors duration-300 font-semibold"
           >
             <span className="relative z-10">View All Partners</span>
-            <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-800 transition-all duration-300 group-hover:h-full -z-0"></span>
+            <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-800 transition-all duration-300 group-hover:h-full -z-0">→</span>
+            
+            
           </Link>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>

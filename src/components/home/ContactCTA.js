@@ -116,7 +116,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                 <div className="max-w-7xl mx-auto">
                   {/* Decorative top accent */}
                   <div className="text-center mb-8">
-                    <div className="inline-block px-8 py-2 bg-orange-100 text-orange-600 rounded-full font-medium mb-6">
+                    <div className="inline-block px-8 py-2 bg-orange-100 text-green-600 rounded-full font-medium mb-6">
                       Get in Touch with Our Experts
                     </div>
                   </div>
@@ -126,9 +126,9 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                     <div className="lg:w-1/3">
                       <div>
                         <h2 className="text-3xl lg:text-4xl font-bold mb-4 leading-tight">
-                          ENQUIRY <span className="text-orange-500 block">FORM</span>
+                          ENQUIRY <span className="text-green-500 block">FORM</span>
                         </h2>
-                        <div className="h-1.5 w-24 bg-orange-500 mb-6 rounded-full"></div>
+                        <div className="h-1.5 w-24 bg-green-500 mb-6 rounded-full"></div>
 
                         <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                           Contact with us through our representative or submit a
@@ -140,7 +140,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                           <div className="flex items-center gap-4">
                             <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
                               <svg
-                                className="w-5 h-5 text-orange-500"
+                                className="w-5 h-5 text-green-500"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -160,7 +160,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                           <div className="flex items-center gap-4">
                             <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
                               <svg
-                                className="w-5 h-5 text-orange-500"
+                                className="w-5 h-5 text-green-500"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -180,7 +180,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                           <div className="flex items-center gap-4">
                             <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
                               <svg
-                                className="w-5 h-5 text-orange-500"
+                                className="w-5 h-5 text-green-500"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -257,7 +257,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                               <div className="relative">
                                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-orange-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -276,7 +276,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   value={formData.name}
                                   onChange={handleChange}
                                   required
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
                                   placeholder="Enter your name"
                                 />
                               </div>
@@ -288,7 +288,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                               <div className="relative">
                                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-orange-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -307,7 +307,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   value={formData.email}
                                   onChange={handleChange}
                                   required
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
                                   placeholder="Enter Email Address"
                                 />
                               </div>
@@ -323,7 +323,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                               <div className="relative">
                                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-orange-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -341,7 +341,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="phone"
                                   value={formData.phone}
                                   onChange={handleChange}
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
                                   placeholder="Contact Number"
                                 />
                               </div>
@@ -353,7 +353,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                               <div className="relative">
                                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-orange-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -371,7 +371,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="jobTitle"
                                   value={formData.jobTitle || ""}
                                   onChange={handleChange}
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
                                   placeholder="Job Title"
                                 />
                               </div>
@@ -387,7 +387,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                               <div className="relative">
                                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-orange-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -405,7 +405,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="company"
                                   value={formData.company || ""}
                                   onChange={handleChange}
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
                                   placeholder="Company Name"
                                 />
                               </div>
@@ -419,7 +419,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="productInterest"
                                   value={formData.productInterest || ""}
                                   onChange={handleChange}
-                                  className="block w-full pl-4 pr-10 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white appearance-none cursor-pointer"
+                                  className="block w-full pl-4 pr-10 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white appearance-none cursor-pointer"
                                 >
                                   <option value="">Select Your Product</option>
                                   <option value="Netstal">Netstal</option>
@@ -462,7 +462,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                               <div className="relative">
                                 <div className="absolute top-3 left-0 pl-3 flex items-start pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-orange-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -486,7 +486,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="address"
                                   value={formData.address || ""}
                                   onChange={handleChange}
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
                                   placeholder="Enter Address"
                                 />
                               </div>
@@ -502,7 +502,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                               <div className="relative">
                                 <div className="absolute top-3 left-0 pl-3 flex items-start pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-orange-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -521,7 +521,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   onChange={handleChange}
                                   required
                                   rows="4"
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white resize-none"
+                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white resize-none"
                                   placeholder="Tell us about your requirements..."
                                 ></textarea>
                               </div>
@@ -533,7 +533,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                             <button
                               type="submit"
                               disabled={isSubmitting}
-                              className={`px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-lg shadow-lg hover:shadow-orange-500/25 focus:outline-none focus:ring-4 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-300 ${
+                              className={`px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold rounded-lg shadow-lg hover:shadow-green-500/25 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 ${
                                 isSubmitting
                                   ? "opacity-70 cursor-not-allowed"
                                   : "hover:transform hover:-translate-y-1"

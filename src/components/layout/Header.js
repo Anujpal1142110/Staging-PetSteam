@@ -183,16 +183,16 @@ const Header = () => {
                     className={`relative font-medium text-lg flex items-center group ${
                       location.pathname === item.path || 
                       (item.path !== '/' && location.pathname.startsWith(item.path))
-                        ? 'text-orange-600 font-semibold'
+                        ? 'text-green-600 font-semibold'
                         : 'text-gray-700'
                     }`}
                   >
-                    <span className="group-hover:text-orange-600 transition-colors duration-300">
+                    <span className="group-hover:text-green-600 transition-colors duration-300">
                       {item.title}
                     </span>
                     <FaChevronDown 
                       size={12} 
-                      className={`ml-2 group-hover:text-orange-600 transition-colors duration-300 ${
+                      className={`ml-2 group-hover:text-green-600 transition-colors duration-300 ${
                         openDropdown === item.title ? 'transform rotate-180' : ''
                       }`}
                     />
@@ -200,7 +200,7 @@ const Header = () => {
                       (item.path !== '/' && location.pathname.startsWith(item.path))) && (
                       <motion.span
                         layoutId="navIndicator"
-                        className="absolute -bottom-1 left-0 w-full h-0.5 bg-orange-600"
+                        className="absolute -bottom-1 left-0 w-full h-0.5 bg-green-600"
                       />
                     )}
                   </button>
@@ -210,18 +210,18 @@ const Header = () => {
                     className={`relative font-medium text-lg flex items-center group ${
                       location.pathname === item.path || 
                       (item.path !== '/' && location.pathname.startsWith(item.path))
-                        ? 'text-orange-600 font-semibold'
+                        ? 'text-green-600 font-semibold'
                         : 'text-gray-700'
                     }`}
                   >
-                    <span className="group-hover:text-orange-600 transition-colors duration-300">
+                    <span className="group-hover:text-green-600 transition-colors duration-300">
                       {item.title}
                     </span>
                     {(location.pathname === item.path || 
                       (item.path !== '/' && location.pathname.startsWith(item.path))) && (
                       <motion.span
                         layoutId="navIndicator"
-                        className="absolute -bottom-1 left-0 w-full h-0.5 bg-orange-600"
+                        className="absolute -bottom-1 left-0 w-full h-0.5 bg-green-600"
                       />
                     )}
                   </Link>
@@ -245,8 +245,8 @@ const Header = () => {
                             onClick={(e) => handleSubDropdownClick(e, dropdownItem.title)}
                             className={`flex justify-between items-center w-full px-5 py-3 ${
                               openSubDropdown === dropdownItem.title 
-                                ? 'bg-orange-600 text-white' 
-                                : 'text-gray-700 hover:bg-orange-600 hover:text-white'
+                                ? 'bg-green-600 text-white' 
+                                : 'text-gray-700 hover:bg-green-600 hover:text-white'
                             } transition-all duration-300`}
                           >
                             <span>{dropdownItem.title}</span>
@@ -258,7 +258,7 @@ const Header = () => {
                           <Link
                             to={dropdownItem.path}
                             onClick={handleDropdownItemClick}
-                            className="block w-full px-5 py-3 text-gray-700 hover:bg-orange-600 hover:text-white transition-all duration-300"
+                            className="block w-full px-5 py-3 text-gray-700 hover:bg-green-600 hover:text-white transition-all duration-300"
                           >
                             {dropdownItem.title}
                           </Link>
@@ -277,7 +277,7 @@ const Header = () => {
                                 key={subItem.path}
                                 to={subItem.path}
                                 onClick={handleDropdownItemClick}
-                                className="block w-full px-5 py-3 text-gray-700 hover:bg-orange-600 hover:text-white transition-all duration-300"
+                                className="block w-full px-5 py-3 text-gray-700 hover:bg-green-600 hover:text-white transition-all duration-300"
                               >
                                 {subItem.title}
                               </Link>
@@ -296,7 +296,7 @@ const Header = () => {
           <div className="hidden lg:block">
             <Link
               to="/contact"
-              className="btn bg-orange-600 hover:bg-orange-700 text-white py-3 px-6 rounded-md font-medium shadow-md transition-all duration-300"
+              className="btn bg-green-600 hover:bg-orange-700 text-white py-3 px-6 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Get a Quote
             </Link>
@@ -336,17 +336,17 @@ const Header = () => {
                       className={`w-full flex items-center justify-between py-2 group ${
                         location.pathname === item.path || 
                         (item.path !== '/' && location.pathname.startsWith(item.path))
-                          ? 'text-orange-600 font-medium'
+                          ? 'text-green-600 font-medium'
                           : 'text-gray-800'
                       }`}
                     >
-                      <span className="group-hover:text-orange-600 transition-colors duration-300">
+                      <span className="group-hover:text-green-600 transition-colors duration-300">
                         {item.title}
                       </span>
                       <motion.div
                         animate={{ rotate: openDropdown === item.title ? 180 : 0 }}
                         transition={{ duration: 0.2 }}
-                        className="group-hover:text-orange-600 transition-colors duration-300"
+                        className="group-hover:text-green-600 transition-colors duration-300"
                       >
                         <FaChevronDown size={14} />
                       </motion.div>
@@ -367,15 +367,15 @@ const Header = () => {
                                 <div>
                                   <button
                                     onClick={(e) => handleSubDropdownClick(e, dropdownItem.title)}
-                                    className="w-full flex items-center justify-between py-2 text-sm text-gray-700 hover:text-orange-600 transition-colors duration-300 group"
+                                    className="w-full flex items-center justify-between py-2 text-sm text-gray-700 hover:text-green-600 transition-colors duration-300 group"
                                   >
-                                    <span className="group-hover:text-orange-600 transition-colors duration-300">
+                                    <span className="group-hover:text-green-600 transition-colors duration-300">
                                       {dropdownItem.title}
                                     </span>
                                     <motion.div
                                       animate={{ rotate: openSubDropdown === dropdownItem.title ? 180 : 0 }}
                                       transition={{ duration: 0.2 }}
-                                      className="group-hover:text-orange-600 transition-colors duration-300"
+                                      className="group-hover:text-green-600 transition-colors duration-300"
                                     >
                                       <FaChevronDown size={12} />
                                     </motion.div>
@@ -395,7 +395,7 @@ const Header = () => {
                                             key={subItem.path}
                                             to={subItem.path}
                                             onClick={handleDropdownItemClick}
-                                            className="block py-2 text-xs text-gray-600 hover:text-orange-600 transition-colors duration-300"
+                                            className="block py-2 text-xs text-gray-600 hover:text-green-600 transition-colors duration-300"
                                           >
                                             {subItem.title}
                                           </Link>
@@ -408,7 +408,7 @@ const Header = () => {
                                 <Link
                                   to={dropdownItem.path}
                                   onClick={handleDropdownItemClick}
-                                  className="block w-full py-2 text-sm text-gray-700 hover:text-orange-600 transition-colors duration-300"
+                                  className="block w-full py-2 text-sm text-gray-700 hover:text-green-600 transition-colors duration-300"
                                 >
                                   {dropdownItem.title}
                                 </Link>
@@ -422,10 +422,10 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className={`py-2 block w-full hover:text-orange-600 transition-colors duration-300 ${
+                    className={`py-2 block w-full hover:text-green-600 transition-colors duration-300 ${
                       location.pathname === item.path || 
                       (item.path !== '/' && location.pathname.startsWith(item.path))
-                        ? 'text-orange-600 font-medium'
+                        ? 'text-green-600 font-medium'
                         : 'text-gray-800'
                     }`}
                   >
@@ -438,7 +438,7 @@ const Header = () => {
             {/* Get a Quote Button - Mobile */}
             <Link
               to="/contact"
-              className="btn bg-orange-600 hover:bg-orange-700 text-white py-3 px-6 rounded-md text-center font-medium shadow-md mt-2"
+              className="btn bg-green-600 hover:bg-orange-700 text-white py-3 px-6 rounded-md text-center font-medium shadow-md mt-2"
             >
               Get a Quote
             </Link>

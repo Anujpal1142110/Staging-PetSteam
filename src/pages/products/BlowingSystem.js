@@ -16,7 +16,7 @@ const BlowingSystem = () => {
               </p>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
               >
                 Request a Quote
               </Link>
@@ -51,23 +51,23 @@ const BlowingSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Production capacity: Up to 36,000 BPH</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Bottle sizes: 200ml to 2.5L</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Cavity options: 4, 6, 8, 10, 12, 16, 20, 24 cavities</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Infrared oven with energy-saving design</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Advanced preform handling system</span>
                   </li>
                 </ul>
@@ -80,23 +80,23 @@ const BlowingSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Production capacity: Up to 4,000 BPH</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Bottle sizes: 3L to 12L</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Specialized heat profile management for large containers</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Reinforced stretching rods for heavier applications</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Enhanced cooling system for optimal bottle quality</span>
                   </li>
                 </ul>
@@ -109,23 +109,23 @@ const BlowingSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Production capacity: Up to 2,000 BPH</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Specialized for 3-5 gallon containers</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Heavy-duty mold handling system</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Optimized for high material distribution efficiency</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Compatible with handle-insertion systems</span>
                   </li>
                 </ul>
@@ -136,42 +136,42 @@ const BlowingSystem = () => {
               <h3 className="text-2xl font-semibold mb-4 text-blue-800">Key Features & Advantages</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Energy Efficiency</h4>
                     <p className="text-gray-700">Advanced heating technology reduces energy consumption by up to 35% compared to conventional systems.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Precise Temperature Control</h4>
                     <p className="text-gray-700">Zone-specific heating profiles ensure optimal material distribution and bottle quality.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Fast Mold Changeover</h4>
                     <p className="text-gray-700">Quick-change mold systems reduce downtime when switching between different bottle formats.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Advanced Process Control</h4>
                     <p className="text-gray-700">Sophisticated control systems with user-friendly interfaces for precise adjustment of all blowing parameters.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Lightweight Bottle Capability</h4>
                     <p className="text-gray-700">Specially designed to handle ultra-lightweight bottles for sustainable packaging solutions.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Integration Ready</h4>
                     <p className="text-gray-700">Designed for seamless integration with filling systems, whether as standalone equipment or as part of a combiblock solution.</p>
@@ -236,7 +236,7 @@ const BlowingSystem = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Request a Consultation
             </Link>

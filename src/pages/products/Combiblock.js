@@ -18,7 +18,7 @@ const Combiblock = () => {
               </p>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
               >
                 Request a Quote
               </Link>
@@ -53,15 +53,15 @@ const Combiblock = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Production capacity: Up to 48,000 BPH</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Bottle sizes: 200ml to 2.5L</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Energy saving: Up to 30% compared to separate machines</span>
                   </li>
                 </ul>
@@ -74,15 +74,15 @@ const Combiblock = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Clean room design for maximum hygiene</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Integrated CIP/SIP systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Compatible with ultra-light bottles</span>
                   </li>
                 </ul>
@@ -135,35 +135,35 @@ const Combiblock = () => {
               <h3 className="text-2xl font-semibold mb-4 text-blue-800">Key Benefits</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Space Efficiency</h4>
                     <p className="text-gray-700">Up to 30% smaller footprint compared to separate machines.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Energy Savings</h4>
                     <p className="text-gray-700">Reduced energy consumption through integrated operations.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Higher Efficiency</h4>
                     <p className="text-gray-700">Streamlined process flow with fewer transfer points.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Improved Product Quality</h4>
                     <p className="text-gray-700">Better control over entire packaging process for consistent quality.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Reduced Labor Costs</h4>
                     <p className="text-gray-700">Integrated systems require fewer operators than separate machines.</p>
@@ -196,7 +196,7 @@ const Combiblock = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Request a Consultation
             </Link>

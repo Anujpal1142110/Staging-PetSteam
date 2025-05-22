@@ -57,7 +57,7 @@ const Claroform = () => {
               </p>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -90,7 +90,7 @@ const Claroform = () => {
               </p>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -108,24 +108,24 @@ const Claroform = () => {
           <div className="flex flex-wrap mb-8">
             <button 
               className={`py-3 px-6 font-medium ${activeTab === 'medical' 
-                ? 'border border-orange-500 text-orange-600 bg-white' 
-                : 'text-gray-600 hover:text-orange-500'}`}
+                ? 'border border-green-500 text-green-600 bg-white' 
+                : 'text-gray-600 hover:text-green-500'}`}
               onClick={() => setActiveTab('medical')}
             >
               Medical Devices
             </button>
             <button 
               className={`py-3 px-6 font-medium ${activeTab === 'packaging' 
-                ? 'border border-orange-500 text-orange-600 bg-white' 
-                : 'text-gray-600 hover:text-orange-500'}`}
+                ? 'border border-green-500 text-green-600 bg-white' 
+                : 'text-gray-600 hover:text-green-500'}`}
               onClick={() => setActiveTab('packaging')}
             >
               Food Packaging
             </button>
             <button 
               className={`py-3 px-6 font-medium ${activeTab === 'custom' 
-                ? 'border border-orange-500 text-orange-600 bg-white' 
-                : 'text-gray-600 hover:text-orange-500'}`}
+                ? 'border border-green-500 text-green-600 bg-white' 
+                : 'text-gray-600 hover:text-green-500'}`}
               onClick={() => setActiveTab('custom')}
             >
               Innovation & Technology
@@ -140,31 +140,31 @@ const Claroform = () => {
               <h3 className="text-xl font-semibold mb-6 text-green-700">Medical Device Molding Expertise</h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Stringent quality control for reproducible medical products</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Narrow tolerances for precision components</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Excellent cavity surface quality for medical-grade parts</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Comprehensive documentation for regulatory compliance</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Support with plant integration and validation processes</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Modern in-house test center for quality verification</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Faster path to maximum manufacturing quality</span>
                 </li>
               </ul>
@@ -177,31 +177,31 @@ const Claroform = () => {
               <h3 className="text-xl font-semibold mb-6 text-green-700">Food Packaging Solutions</h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Expertise in developing and implementing new food packaging solutions</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Deep understanding of high hygiene requirements</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Minimized plastic use for eco-friendly packaging</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Solutions for complex packaging challenges</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">High wear resistance for extended service life</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Problem-free further processing on downstream machines</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Fast and smooth implementation of new solutions</span>
                 </li>
               </ul>
@@ -214,31 +214,31 @@ const Claroform = () => {
               <h3 className="text-xl font-semibold mb-6 text-green-700">Innovation & Technology</h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Latest technology implementation for optimal results</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Comprehensive development know-how for efficient projects</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Uncompromising reliability in mold manufacturing</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Drive to find innovative solutions for complex challenges</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Inclusive teamwork approach for best project outcomes</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Efficient project workflow from concept to production</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Commitment to excellence in every project</span>
                 </li>
               </ul>
@@ -248,7 +248,7 @@ const Claroform = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16 bg-orange-600 text-white">
+      <section className="py-16 bg-green-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Enhance Your Production Capabilities?</h2>
           <p className="text-xl max-w-3xl mx-auto mb-8">
@@ -257,13 +257,13 @@ const Claroform = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Get In Touch
             </Link>
             <Link
               to="/services"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 px-8 py-3 rounded-md font-medium transition-all duration-300"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-md font-medium transition-all duration-300"
             >
               Our Services
             </Link>

@@ -22,11 +22,11 @@ const servicesData = [
 
 const ImageCard = ({ service, index, isVisible }) => {
   const [isHovered, setIsHovered] = useState(false);
-  
+
   return (
-    <div 
+    <div
       className={`relative overflow-hidden rounded-xl bg-white shadow-md transition-all duration-500 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
-      style={{ 
+      style={{
         transitionDelay: `${index * 120}ms`,
         transform: isHovered ? 'translateY(-8px)' : 'translateY(0)',
         boxShadow: isHovered ? '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' : '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
@@ -34,51 +34,48 @@ const ImageCard = ({ service, index, isVisible }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <a href={`#${service.slug}`} className="block h-full">
+      {/* Dynamically link to the correct product page */}
+      <a href={`/products/${service.slug}`} className="block h-full">
         <div className="relative overflow-hidden">
-          {/* Enhanced overlay with gradient animation */}
-          <div 
+          <div
             className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-600/60 to-indigo-800/60 z-10 transition-all duration-300"
-            style={{ 
+            style={{
               opacity: isHovered ? 1 : 0,
               backgroundSize: isHovered ? '200% 200%' : '100% 100%',
               backgroundPosition: isHovered ? 'right bottom' : 'left top'
             }}
           >
             <div className="text-white px-6 py-3 border-2 border-white rounded-lg transform transition-all duration-300"
-                 style={{ 
-                   opacity: isHovered ? 1 : 0, 
+                 style={{
+                   opacity: isHovered ? 1 : 0,
                    transform: isHovered ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.9)',
                    boxShadow: isHovered ? '0 0 20px rgba(255,255,255,0.3)' : 'none'
                  }}>
               View Details
             </div>
           </div>
-          
-          {/* The image container with subtle pulse animation on hover */}
+
           <div className="h-52 lg:h-48 overflow-hidden p-4 bg-white flex items-center justify-center">
-            <img 
-              src={service.image} 
+            <img
+              src={service.image}
               alt={service.title}
               className="max-h-full max-w-full object-contain transition-all duration-500"
-              style={{ 
+              style={{
                 transform: isHovered ? 'scale(1.08)' : 'scale(1)',
                 filter: `drop-shadow(0 4px 6px rgba(0, 0, 0, ${isHovered ? '0.2' : '0'}))`
               }}
             />
           </div>
         </div>
-        
-        {/* Enhanced title bar with animated underline */}
+
         <div className="p-4 border-t border-gray-100 bg-white relative">
           <h3 className={`font-medium text-lg transition-colors duration-300 text-center ${isHovered ? 'text-blue-600' : 'text-gray-800'}`}>
             {service.title}
           </h3>
-          
-          {/* Animated underline */}
-          <div 
+
+          <div
             className="absolute bottom-0 left-1/2 h-0.5 bg-blue-500 transition-all duration-300 rounded-full"
-            style={{ 
+            style={{
               width: isHovered ? '80%' : '0%',
               transform: 'translateX(-50%)',
               opacity: isHovered ? 1 : 0
@@ -89,6 +86,8 @@ const ImageCard = ({ service, index, isVisible }) => {
     </div>
   );
 };
+
+
 
 const ProductImageShowcase = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -123,7 +122,7 @@ const ProductImageShowcase = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Explore Our Products And Services</h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-green-500 mx-auto mt-6"></div>
         </motion.div>
           </div>
           
@@ -162,13 +161,13 @@ const ProductImageShowcase = () => {
             className="relative inline-block px-8 py-3 overflow-hidden group rounded-full"
           >
             {/* Button background with gradient effect */}
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-indigo-600 transition-all duration-300 group-hover:bg-gradient-to-l"></span>
+            {/* <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-indigo-600 transition-all duration-300 group-hover:bg-gradient-to-l"></span> */}
             
             {/* Button text */}
-            <span className="relative flex items-center justify-center text-white font-medium z-10">
+            {/* <span className="inline-block bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg transition-colors duration-300 font-semibold">
               <span>View All Services</span>
               <span className="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </span>
+            </span> */}
             
             {/* Light effect overlay */}
             <span className="absolute top-0 left-0 w-full h-full bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-10"></span>

@@ -53,14 +53,14 @@ const BeverageFilling = () => {
               <ul className="mb-4 space-y-2">
                 {['Starbloc','Bottled Water Combiblock','Big-Container Combiblock','Aseptic Combiblock','Ultra-clean Combiblock','CSD Combiblock','Hot-fill Combiblock','Non-beverage Combiblock'].map(item => (
                   <li key={item} className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link
                 to="/products/combiblock"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Know More
               </Link>
@@ -88,14 +88,14 @@ const BeverageFilling = () => {
               <ul className="mb-4 space-y-2">
                 {['Bottle Blower','Big-container Blower','Gallon Blower'].map(item => (
                   <li key={item} className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link
                 to="/products/blowing-system"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Know More
               </Link>
@@ -114,7 +114,7 @@ const BeverageFilling = () => {
                   <ul key={i} className="space-y-2">
                     {col.map(item => (
                       <li key={item} className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -124,7 +124,7 @@ const BeverageFilling = () => {
               <div className="mt-4">
                 <Link
                   to="/products/filling-system"
-                  className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                  className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
                 >
                   Know More
                 </Link>
@@ -158,7 +158,7 @@ const BeverageFilling = () => {
                   <ul key={i} className="space-y-2">
                     {col.map(item => (
                       <li key={item} className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -168,7 +168,7 @@ const BeverageFilling = () => {
               <div className="mt-4">
                 <Link
                   to="/products/secondary-packaging-system"
-                  className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                  className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
                 >
                   Know More
                 </Link>
@@ -183,14 +183,14 @@ const BeverageFilling = () => {
               <ul className="mb-4 space-y-2">
                 {['Intelligent Warehouse','RGV (Rail Guided Vehicle)','AGV (Automated Guided Vehicle)','WMS (Warehouse Management System)'].map(item => (
                   <li key={item} className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link
                 to="/products/intelligent-logistics"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Know More
               </Link>
@@ -218,14 +218,14 @@ const BeverageFilling = () => {
               <ul className="mb-4 space-y-2">
                 {['Water Treatment System','Processing System','UHT System','CIP System','COP/SOP System','Disinfectant Blending System','Carbon Mixer'].map(item => (
                   <li key={item} className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link
                 to="/products/pretreatment-system"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Know More
               </Link>
@@ -244,8 +244,8 @@ const BeverageFilling = () => {
             <button
               className={`py-3 px-6 font-medium ${
                 activeTab === 'main'
-                  ? 'border border-orange-500 text-orange-600 bg-white'
-                  : 'text-gray-600 hover:text-orange-500'
+                  ? 'border border-green-500 text-green-600 bg-white'
+                  : 'text-gray-600 hover:text-green-500'
               }`}
               onClick={() => setActiveTab('main')}
             >
@@ -271,7 +271,7 @@ const BeverageFilling = () => {
                 'Newamstar offers lowest cost of machine maintenance'
               ].map((text, i) => (
                 <li key={i} className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">{text}</span>
                 </li>
               ))}
@@ -281,7 +281,7 @@ const BeverageFilling = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-orange-600 text-white">
+      <section className="py-16 bg-green-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Upgrade Your Manufacturing Capabilities?
@@ -292,13 +292,13 @@ const BeverageFilling = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Get a Quote
             </Link>
             <Link
               to="/services"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 px-8 py-3 rounded-md font-medium transition-all duration-300"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-md font-medium transition-all duration-300"
             >
               Learn About Our Services
             </Link>

@@ -16,7 +16,7 @@ const IntelligentLogistics = () => {
               </p>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
               >
                 Request a Quote
               </Link>
@@ -51,23 +51,23 @@ const IntelligentLogistics = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">High-density storage with automatic stacker cranes</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Pallet, case, and tote handling capabilities</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Real-time inventory tracking and management</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Automated order fulfillment</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">First-in, first-out (FIFO) or other inventory management strategies</span>
                   </li>
                 </ul>
@@ -80,19 +80,19 @@ const IntelligentLogistics = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">High-speed movement along fixed rails</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Heavy load capacity</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Precise positioning for automated loading/unloading</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Integration with AS/RS systems and production lines</span>
                   </li>
                 </ul>
@@ -105,23 +105,23 @@ const IntelligentLogistics = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Flexible routing without fixed infrastructure</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Laser, magnetic, or optical guidance systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Obstacle detection and safety systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Battery management for continuous operation</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Central fleet management system</span>
                   </li>
                 </ul>
@@ -134,27 +134,27 @@ const IntelligentLogistics = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Real-time inventory tracking and management</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Order management and fulfillment</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Resource allocation and scheduling</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Performance analytics and reporting</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Integration with ERP and other business systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Mobile access for management on the go</span>
                   </li>
                 </ul>
@@ -165,42 +165,42 @@ const IntelligentLogistics = () => {
               <h3 className="text-2xl font-semibold mb-4 text-blue-800">Key Benefits</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Increased Operational Efficiency</h4>
                     <p className="text-gray-700">Automate repetitive tasks and optimize material flow to reduce cycle times by up to 50%.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Enhanced Inventory Accuracy</h4>
                     <p className="text-gray-700">Real-time tracking and automated processes reduce errors and improve inventory accuracy to over 99.9%.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Space Optimization</h4>
                     <p className="text-gray-700">High-density storage solutions can increase storage capacity by up to 40% in the same footprint.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Labor Cost Reduction</h4>
                     <p className="text-gray-700">Automated systems reduce the need for manual handling, lowering labor costs and reducing workplace injuries.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Data-Driven Decision Making</h4>
                     <p className="text-gray-700">Comprehensive analytics provide insights for continuous improvement and operational optimization.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Scalable Solutions</h4>
                     <p className="text-gray-700">Modular design allows for phased implementation and expansion as your business grows.</p>
@@ -262,7 +262,7 @@ const IntelligentLogistics = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Request a Consultation
             </Link>

@@ -98,7 +98,7 @@ const HowWeWork = () => {
                     'Global certification sign-off'
                   ].map(item => (
                     <li key={item} className="flex items-start">
-                      <span className="text-orange-500 mr-2">•</span>
+                      <span className="text-green-500 mr-2">•</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -128,7 +128,7 @@ const HowWeWork = () => {
                     'Process Training'
                   ].map(item => (
                     <li key={item} className="flex items-start">
-                      <span className="text-orange-500 mr-2">•</span>
+                      <span className="text-green-500 mr-2">•</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -176,7 +176,7 @@ const HowWeWork = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-8 rounded-md transition-colors duration-300"
+              className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-3 px-8 rounded-md transition-colors duration-300"
             >
               Get In Touch
             </Link>

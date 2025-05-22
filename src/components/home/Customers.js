@@ -65,7 +65,7 @@ const Customers = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Our Customers</h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-green-500 mx-auto mt-6"></div>
         </motion.div>
 
         {/* Description Text */}
@@ -203,20 +203,38 @@ const Customers = () => {
         </div>
 
         {/* View All Button */}
-        <motion.div 
+        {/* <motion.div 
           className="text-center mt-12"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >
           <Link 
-            to="/Customers" 
+            to="/about/customers" 
             className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-all duration-500 hover:shadow-lg group relative overflow-hidden"
           >
             <span className="relative z-10">View All Customers</span>
             <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-800 transition-all duration-500 group-hover:h-full -z-0"></span>
           </Link>
-        </motion.div>
+        </motion.div> */}
+
+
+          <motion.div
+                  className="text-center mt-12"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isVisible ? { opacity: 1, y: 0 } : {}}
+                  transition={{ delay: 0.8, duration: 0.5 }}
+                >
+                  <Link
+                         to="/about/customers" 
+                    className="inline-block bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg transition-colors duration-300 font-semibold"
+                  >
+                      <span className="relative z-10">View All Customers</span>
+                    <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-800 transition-all duration-300 group-hover:h-full -z-0">→</span>
+                    
+                    
+                  </Link>
+                </motion.div>
       </div>
     </section>
   );

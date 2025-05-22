@@ -43,7 +43,7 @@ const MachineRelocation = () => {
 
             {/* Sidebar */}
             <div className="md:w-1/3">
-              <div className="bg-orange-500 p-6">
+              <div className="bg-green-500 p-6">
                 <h3 className="text-xl font-bold text-center text-white mb-4">Machine Relocation, Installation & Dis-Assembly</h3>
                 <p className="text-white">
                   Our Service team's expertise enables us to offer your old Machine Installation and machine transfer from one location to another location. For decades we have delivered multiple projects to our clients.

@@ -121,7 +121,7 @@
 
 /* Highlight the active dropdown item with orange background */
 .dropdown-item-active {
-  background-color: #f97316; /* orange-600 */
+  background-color: #f97316; /* green-600 */
   color: white;
 }
 

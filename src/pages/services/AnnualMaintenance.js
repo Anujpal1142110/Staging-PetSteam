@@ -50,7 +50,7 @@ const AnnualMaintenance = () => {
 
             {/* Sidebar */}
             <div className="md:w-1/3">
-              <div className="bg-orange-500 p-6 rounded-lg">
+              <div className="bg-green-500 p-6 rounded-lg">
                 <h3 className="text-xl font-bold text-center text-white mb-4">
                   Annual Maintenance Contract &amp; Plant Audit
                 </h3>

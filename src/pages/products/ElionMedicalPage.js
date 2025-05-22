@@ -67,19 +67,19 @@ const ElionMedicalPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Clean Room Performance</h3>
               <ul className="space-y-3 w-full">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Designed for ISO Class 7 and 8 clean rooms</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Minimal particle emission</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Easy to clean and maintain sterile conditions</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Special surface treatments for medical environments</span>
                 </li>
               </ul>
@@ -94,19 +94,19 @@ const ElionMedicalPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Precision & Efficiency</h3>
               <ul className="space-y-3 w-full">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Maximum energy efficiency through recovery of kinetic energy</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Exceptional system availability and dependability</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Reliable integration of handling requirements</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Validation-ready processes for medical requirements</span>
                 </li>
               </ul>
@@ -164,7 +164,7 @@ const ElionMedicalPage = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Request Consultation
             </Link>
@@ -194,19 +194,19 @@ export default ElionMedicalPage;
               <h3 className="text-xl font-bold text-blue-700 mb-4">Clamping Unit</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Clamping force: 800 - 2800 kN</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Electrical clamping apparatus</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Incredibly quick cycle times</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Clean room compatible design</span>
                 </li>
               </ul>
@@ -217,19 +217,19 @@ export default ElionMedicalPage;
               <h3 className="text-xl font-bold text-blue-700 mb-4">Injection Unit</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>All-electric injection unit</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Integral force measurement</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Maximum shot-to-shot consistency</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Stable part weight control</span>
                 </li>
               </ul>
@@ -240,19 +240,19 @@ export default ElionMedicalPage;
               <h3 className="text-xl font-bold text-blue-700 mb-4">Control System</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>AXOS controller</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Freely programmable for maximum flexibility</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Intelligent Action integration</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>User-friendly interface</span>
                 </li>
               </ul>

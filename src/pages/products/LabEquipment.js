@@ -50,33 +50,33 @@ const LabEquipment = () => {
                   <h4 className="text-xl font-bold text-blue-700 mb-4">Ubbelohde Viscometer</h4>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">IVS100 Series</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">IVS200 Series</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">IVS300 Series</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">IVS400 Series</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">IVS800 Series</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">IVS800H Series</span>
                     </li>
                   </ul>
                   <Link 
                     to="/know-more-viscometer"
-                    className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
+                    className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
                   >
                     Know More
                   </Link>
@@ -99,44 +99,44 @@ const LabEquipment = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                     <ul className="space-y-3">
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Bottle Size Tester</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Height Scale</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Verticality Tester</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Top Load Meter</span>
                       </li>
                     </ul>
                     <ul className="space-y-3">
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Balance DTY-B5000</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Sealing Performance Tester</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Humidity Chamber</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Refrigerator</span>
                       </li>
                     </ul>
                   </div>
                   <Link 
                     to="/know-more-bottle-test-instruments"
-                    className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
+                    className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
                   >
                     Know More
                   </Link>
@@ -158,41 +158,41 @@ const LabEquipment = () => {
                   <h4 className="text-xl font-bold text-blue-700 mb-4">Preform Test Instruments</h4>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Balance</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Profile Projector</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">One button profile projector AY-100</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Verticality tester</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Wall thickness tester (Preform)</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Inside Diameter of neck finish Tester</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Light Box T60</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Stress test (Polariscope Strain Viewer)</span>
                     </li>
                   </ul>
                   <Link 
                     to="/know-more-preform-test"
-                    className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
+                    className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
                   >
                     Know More
                   </Link>
@@ -218,7 +218,7 @@ const LabEquipment = () => {
                   </p>
                   <Link 
                     to="/know-more-chromatograph"
-                    className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
+                    className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
                   >
                     Know More
                   </Link>
@@ -240,48 +240,48 @@ const LabEquipment = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                     <ul className="space-y-3">
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Polymer dissolver</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Pipe Machine</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Constant water bath T25</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Density Meter</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">PET standard chips</span>
                       </li>
                     </ul>
                     <ul className="space-y-3">
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Balance</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Moisture meter</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Oven</span>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <span className="text-gray-700">Testing necessary accessories</span>
                       </li>
                     </ul>
                   </div>
                   <Link 
                     to="/know-more-sample-preparation"
-                    className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
+                    className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
                   >
                     Know More
                   </Link>
@@ -309,7 +309,7 @@ const LabEquipment = () => {
                   </p>
                   <Link 
                     to="/know-more-spectrophotometer"
-                    className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
+                    className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded transition-colors duration-300"
                   >
                     Know More
                   </Link>
@@ -332,16 +332,16 @@ const LabEquipment = () => {
               <div className="flex flex-wrap border-b border-gray-200 mb-8">
                 <button 
                   className={`py-3 px-6 font-medium ${activeInfoTab === 'company' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveInfoTab('company')}
                 >
                   ZONWON Company
                 </button>
                 <button 
                   className={`py-3 px-6 font-medium ${activeInfoTab === 'preform' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveInfoTab('preform')}
                 >
                   Laboratory Equipment
@@ -353,31 +353,31 @@ const LabEquipment = () => {
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">World's leading technology for laboratory testing equipment</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">High-standard equipment designed in Germany</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Comprehensive range of testing equipment from manual to fully automatic</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Global service network with experienced technical support</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Trusted by leading manufacturers in over 50 countries</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Continuous innovation and development of new testing solutions</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Comprehensive expertise in polymer material and liquid testing</span>
                     </li>
                   </ul>
@@ -390,35 +390,35 @@ const LabEquipment = () => {
                   <h5 className="font-semibold text-gray-800 mb-4">Our laboratory equipment offers significant advantages:</h5>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">High precision and accuracy in testing results</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Easy operation with intuitive interfaces</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Low maintenance requirements</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Robust construction for long service life</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Comprehensive data analysis capabilities</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Compliance with international testing standards</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Complete documentation for quality control</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="text-orange-500 mr-3 mt-1">➤</div>
+                      <div className="text-green-500 mr-3 mt-1">➤</div>
                       <span className="text-gray-700">Seamless integration with laboratory information systems</span>
                     </li>
                   </ul>
@@ -434,24 +434,24 @@ const LabEquipment = () => {
               <div className="flex flex-wrap border-b border-gray-200 mb-8">
                 <button 
                   className={`py-3 px-6 font-medium ${activeTab === 'features' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveTab('features')}
                 >
                   Key Features
                 </button>
                 <button 
                   className={`py-3 px-6 font-medium ${activeTab === 'applications' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveTab('applications')}
                 >
                   Applications
                 </button>
                 <button 
                   className={`py-3 px-6 font-medium ${activeTab === 'specifications' 
-                    ? 'border-b-2 border-orange-500 text-orange-600' 
-                    : 'text-gray-600 hover:text-orange-500'}`}
+                    ? 'border-b-2 border-green-500 text-green-600' 
+                    : 'text-gray-600 hover:text-green-500'}`}
                   onClick={() => setActiveTab('specifications')}
                 >
                   Technical Specifications
@@ -470,28 +470,28 @@ const LabEquipment = () => {
                     <h4 className="text-xl font-bold text-blue-700 mb-4">Equipment Quality Features</h4>
                     <ul className="space-y-4">
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <div>
                           <h5 className="font-semibold text-gray-800">High Precision Measurement</h5>
                           <p className="text-gray-700">Advanced sensor technology ensures accurate and reproducible results.</p>
                         </div>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <div>
                           <h5 className="font-semibold text-gray-800">User-Friendly Interface</h5>
                           <p className="text-gray-700">Intuitive controls and displays for easy operation.</p>
                         </div>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <div>
                           <h5 className="font-semibold text-gray-800">Robust Construction</h5>
                           <p className="text-gray-700">Premium materials and engineering for long-term reliability in laboratory environments.</p>
                         </div>
                       </li>
                       <li className="flex items-start">
-                        <div className="text-orange-500 mr-3 mt-1">➤</div>
+                        <div className="text-green-500 mr-3 mt-1">➤</div>
                         <div>
                           <h5 className="font-semibold text-gray-800">Advanced Data Management</h5>
                           <p className="text-gray-700">Comprehensive data collection, storage, and export capabilities.</p>
@@ -537,25 +537,25 @@ const LabEquipment = () => {
                       <h4 className="text-xl font-bold text-blue-700 mb-4">Polymer Testing</h4>
                       <ul className="space-y-2">
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Viscosity determination</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Intrinsic viscosity measurement</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Molecular weight analysis</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Polymer degradation studies</span>
                         </li>
                         /* Fix for Polymer Testing section in Applications tab */
 
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Additive content determination</span>
                         </li>
                       </ul>
@@ -565,23 +565,23 @@ const LabEquipment = () => {
                       <h4 className="text-xl font-bold text-blue-700 mb-4">Packaging Quality Control</h4>
                       <ul className="space-y-2">
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Bottle testing and verification</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Preform quality evaluation</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Container wall thickness analysis</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Dimensional stability testing</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Top load and crush resistance measurement</span>
                         </li>
                       </ul>
@@ -709,27 +709,27 @@ const LabEquipment = () => {
                       <h4 className="text-xl font-bold text-blue-700 mb-4">Gas Chromatograph Specifications</h4>
                       <ul className="space-y-2">
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Temperature Range: 5°C to 450°C</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Temperature Control: ±0.1°C</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Detector Types: FID, TCD, ECD (optional)</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Injection Ports: 1-2 (configurable)</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Column Capacity: Up to 2 columns</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Software: Windows-based control system</span>
                         </li>
                       </ul>
@@ -739,27 +739,27 @@ const LabEquipment = () => {
                       <h4 className="text-xl font-bold text-blue-700 mb-4">Spectrophotometer Specifications</h4>
                       <ul className="space-y-2">
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Wavelength Range: 360-750nm</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Wavelength Accuracy: ±0.2nm</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Photometric Range: 0-200% Reflectance</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Measurement Geometry: d/8°</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Display: 7-inch touch screen</span>
                         </li>
                         <li className="flex items-start">
-                          <div className="text-orange-500 mr-3 mt-1">•</div>
+                          <div className="text-green-500 mr-3 mt-1">•</div>
                           <span className="text-gray-700">Operating System: Android</span>
                         </li>
                       </ul>
@@ -823,7 +823,7 @@ const LabEquipment = () => {
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link 
                   to="/contact"
-                  className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
+                  className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
                 >
                   Request a Quote
                 </Link>

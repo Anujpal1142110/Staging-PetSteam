@@ -63,7 +63,7 @@ const Corvaglia = () => {
               </p>
               {/* <Link 
                 to="/products/standard-closures"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 
               </Link> */}
@@ -93,7 +93,7 @@ const Corvaglia = () => {
               </p>
               {/* <Link 
                 to="/products/eco-closures"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 
               </Link> */}
@@ -109,7 +109,7 @@ const Corvaglia = () => {
               </p>
               {/* <Link 
                 to="/products/specialized-closures"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 
               </Link> */}
@@ -139,7 +139,7 @@ const Corvaglia = () => {
               </p>
               {/* <Link 
                 to="/products/custom-closures"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 
               </Link> */}
@@ -157,24 +157,24 @@ const Corvaglia = () => {
           <div className="flex flex-wrap mb-8">
             <button 
               className={`py-3 px-6 font-medium ${activeTab === 'caps' 
-                ? 'border border-orange-500 text-orange-600 bg-white' 
-                : 'text-gray-600 hover:text-orange-500'}`}
+                ? 'border border-green-500 text-green-600 bg-white' 
+                : 'text-gray-600 hover:text-green-500'}`}
               onClick={() => setActiveTab('caps')}
             >
               Standard Caps
             </button>
             <button 
               className={`py-3 px-6 font-medium ${activeTab === 'solutions' 
-                ? 'border border-orange-500 text-orange-600 bg-white' 
-                : 'text-gray-600 hover:text-orange-500'}`}
+                ? 'border border-green-500 text-green-600 bg-white' 
+                : 'text-gray-600 hover:text-green-500'}`}
               onClick={() => setActiveTab('solutions')}
             >
               Custom Solutions
             </button>
             <button 
               className={`py-3 px-6 font-medium ${activeTab === 'special' 
-                ? 'border border-orange-500 text-orange-600 bg-white' 
-                : 'text-gray-600 hover:text-orange-500'}`}
+                ? 'border border-green-500 text-green-600 bg-white' 
+                : 'text-gray-600 hover:text-green-500'}`}
               onClick={() => setActiveTab('special')}
             >
               Special Applications
@@ -189,31 +189,31 @@ const Corvaglia = () => {
               <h3 className="text-xl font-semibold mb-6 text-green-700">Benefits / What Makes Us Different? (Standard Caps)</h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Global reach with over 20% market share for soft drink PET bottle closures</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Tested and approved by international beverage manufacturers</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Robust partner network spanning over 15 countries worldwide</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">High-speed compatibility with all major filling lines</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Superior sealing properties for optimal product protection</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Consistent quality and performance across all production batches</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Available in a wide range of colors and finishes</span>
                 </li>
               </ul>
@@ -226,31 +226,31 @@ const Corvaglia = () => {
               <h3 className="text-xl font-semibold mb-6 text-green-700">Benefits / What Makes Us Different? (Custom Solutions) –</h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Dedicated design and engineering team for custom projects</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Rapid prototyping capabilities for quick product development</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Brand-specific customization options for colors, textures, and logos</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Innovative solutions for unique packaging challenges</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Flexible production capabilities to accommodate various order sizes</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Long-term partnership approach for continuous improvement</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Intellectual property protection for customer-specific designs</span>
                 </li>
               </ul>
@@ -263,31 +263,31 @@ const Corvaglia = () => {
               <h3 className="text-xl font-semibold mb-6 text-green-700">Benefits / What Makes Us Different? (Special Applications) –</h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Enhanced barrier properties for carbonated beverages</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Specialized designs for sports drinks and functional beverages</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Tamper-evident features for product security</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Lightweight designs that reduce material usage without compromising performance</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Solutions for hot-fill applications with enhanced thermal stability</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Special closures for aseptic filling environments</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700 leading-relaxed">Eco-friendly options with reduced environmental impact</span>
                 </li>
               </ul>
@@ -297,7 +297,7 @@ const Corvaglia = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16 bg-orange-600 text-white">
+      <section className="py-16 bg-green-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Enhance Your Bottle Closure Solutions?</h2>
           <p className="text-xl max-w-3xl mx-auto mb-8">
@@ -306,13 +306,13 @@ const Corvaglia = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Get a Quote
             </Link>
             <Link
               to="/services/project-design"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 px-8 py-3 rounded-md font-medium transition-all duration-300"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-md font-medium transition-all duration-300"
             >
               Learn About Our Services
             </Link>

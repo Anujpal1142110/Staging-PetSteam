@@ -66,7 +66,7 @@ const InjectionMolding = () => {
               </p>
               <Link
                 to="/products/pet-line"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Know More
               </Link>
@@ -86,7 +86,7 @@ const InjectionMolding = () => {
               <p className="text-gray-700 mb-4">Powerful, fast, and precise injection molding machine.</p>
               <Link
                 to="/products/elion"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Know More
               </Link>
@@ -105,7 +105,7 @@ const InjectionMolding = () => {
               </p>
               <Link
                 to="/products/elion-medical"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Know More
               </Link>
@@ -127,7 +127,7 @@ const InjectionMolding = () => {
               </p>
               <Link
                 to="/products/elios"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Know More
               </Link>
@@ -142,7 +142,7 @@ const InjectionMolding = () => {
       </section>
 
       
-      <section className="py-16 bg-orange-600">
+      <section className="py-16 bg-green-600">
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Upgrade Your Manufacturing Capabilities?
@@ -155,14 +155,14 @@ const InjectionMolding = () => {
           <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
             <Link
               to="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-colors duration-300"
+              className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-colors duration-300"
             >
               Get a Quote
             </Link>
 
             <Link
               to="/services"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-3 rounded-md font-medium transition-colors duration-300"
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-md font-medium transition-colors duration-300"
             >
               Learn About Our Services
             </Link>

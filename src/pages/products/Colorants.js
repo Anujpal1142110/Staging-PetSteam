@@ -64,7 +64,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">Liquid Colorant</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -80,7 +80,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">Active Oxygen Scavenger</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -96,7 +96,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">Oxygen Blocker</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -115,7 +115,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">CO2 Blocker</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -131,7 +131,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">AA Reducer</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -147,7 +147,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">UV Blocker</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -166,7 +166,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">Light Blocking Agent</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -182,7 +182,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">Anti-Friction Agent</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -198,7 +198,7 @@ const Colorway = () => {
               <h3 className="text-lg font-semibold mb-3">White O.L Light Blocker</h3>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Get In Touch
               </Link>
@@ -215,7 +215,7 @@ const Colorway = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -228,7 +228,7 @@ const Colorway = () => {
             
             {/* Feature 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -241,7 +241,7 @@ const Colorway = () => {
             
             {/* Feature 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                 </svg>
@@ -254,7 +254,7 @@ const Colorway = () => {
             
             {/* Feature 4 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
@@ -267,7 +267,7 @@ const Colorway = () => {
             
             {/* Feature 5 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -280,7 +280,7 @@ const Colorway = () => {
             
             {/* Feature 6 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -295,7 +295,7 @@ const Colorway = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16 bg-orange-600 text-white">
+      <section className="py-16 bg-green-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Enhance Your Products with Advanced Coloring Solutions</h2>
           <p className="text-xl max-w-3xl mx-auto mb-8">
@@ -304,13 +304,13 @@ const Colorway = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Get In Touch
             </Link>
             <Link
               to="/products"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-orange-600 px-8 py-3 rounded-md font-medium transition-all duration-300"
+              className="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-md font-medium transition-all duration-300"
             >
               Explore Products
             </Link>

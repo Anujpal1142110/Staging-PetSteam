@@ -63,19 +63,19 @@ const ElionPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Clamping Unit</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Clamping force: 800 - 4200 kN</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Specialized electronic clamping device</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>High-speed operation</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Precision mold protection</span>
                 </li>
               </ul>
@@ -86,19 +86,19 @@ const ElionPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Injection Unit</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>High-performance electric or hybrid injection units</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Adaptive drive systems</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Precision material control</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Multiple screw and barrel options</span>
                 </li>
               </ul>
@@ -109,19 +109,19 @@ const ElionPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Control System</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Advanced aXos controller</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Intuitive user interface</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Comprehensive process monitoring</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Integrated quality control</span>
                 </li>
               </ul>
@@ -145,19 +145,19 @@ const ElionPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Efficiency & Performance</h3>
               <ul className="space-y-3 w-full">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Maximum energy effectiveness through adaptive drive systems</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Short cycle times for increased productivity</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Minimal maintenance requirements</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Optimized for reduced operation costs</span>
                 </li>
               </ul>
@@ -172,19 +172,19 @@ const ElionPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Precision & Reliability</h3>
               <ul className="space-y-3 w-full">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Absolute accuracy in part production</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Exceptional shot-to-shot consistency</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Industry-leading uptime and reliability</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Modular design for future expansion</span>
                 </li>
               </ul>
@@ -242,7 +242,7 @@ const ElionPage = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Get a Custom Quote
             </Link>

@@ -63,19 +63,19 @@ const PetLinePage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Clamping Unit</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Clamping force: 3000 kN, 4000 kN, 5000 kN</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Electric clamping unit</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Lock-to-lock time: 1.9 seconds</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Up to 144 cavities</span>
                 </li>
               </ul>
@@ -86,19 +86,19 @@ const PetLinePage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Injection Unit</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Energy-efficient, two-stage injection unit</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>New PETX screw for optimal processing</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Handles virgin PET, rPET and additives</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Precise shot-to-shot consistency</span>
                 </li>
               </ul>
@@ -109,19 +109,19 @@ const PetLinePage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Control & Operation</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>aXos controller of the latest generation</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Innovative operating concept</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>SMART OPERATION for easier, safer and faster commissioning</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Intuitive user interface</span>
                 </li>
               </ul>
@@ -145,19 +145,19 @@ const PetLinePage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Superior Performance</h3>
               <ul className="space-y-3 w-full">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Lateral post-mold cooling unit with up to 4 post-cooling stations</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Fastest cycle times in the industry</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Exceptional part quality and consistency</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Advanced cooling for optimal preform quality</span>
                 </li>
               </ul>
@@ -172,19 +172,19 @@ const PetLinePage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Energy Efficiency</h3>
               <ul className="space-y-3 w-full">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Lowest energy consumption in the market</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Recuperation of kinetic energy</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Reduced operational costs</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Environmentally responsible manufacturing</span>
                 </li>
               </ul>
@@ -242,7 +242,7 @@ const PetLinePage = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Request a Quote
             </Link>

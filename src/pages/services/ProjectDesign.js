@@ -42,7 +42,7 @@ const ProjectDesign = () => {
 
             {/* Sidebar */}
             <div className="md:w-1/3">
-              <div className="bg-orange-500 p-6">
+              <div className="bg-green-500 p-6">
                 <h3 className="text-xl font-bold text-center text-white mb-4">Project Design & Delivery Consultancy</h3>
                 <p className="text-white">
                   At PET Stream we offer Project consultancy and delivery of complete projects for greenfield plants as well as the upgradation of old plants, our designated project manager will guide you from scrap to final production project design, machine selection, and Return on Investment with higher profit margin so you can get your running plant without any headache or Involvement of extra manpower incase of extension.

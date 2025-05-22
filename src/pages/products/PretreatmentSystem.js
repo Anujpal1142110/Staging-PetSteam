@@ -16,7 +16,7 @@ const PretreatmentSystem = () => {
               </p>
               <Link 
                 to="/contact"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded transition-colors duration-300"
               >
                 Request a Quote
               </Link>
@@ -51,27 +51,27 @@ const PretreatmentSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Pre-filtration and multimedia filtration</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Water softening and ion exchange</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Reverse osmosis (RO) systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">UV sterilization</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Ozone treatment</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Continuous monitoring and quality control</span>
                   </li>
                 </ul>
@@ -84,23 +84,23 @@ const PretreatmentSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Sugar dissolution and inversion</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Syrup preparation and blending</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Continuous in-line blending</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Precise dosing of ingredients</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Batch or continuous processing options</span>
                   </li>
                 </ul>
@@ -113,19 +113,19 @@ const PretreatmentSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Direct and indirect heating options</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Precise temperature control</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Integrated aseptic holding</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Energy-efficient heat recovery systems</span>
                   </li>
                 </ul>
@@ -138,23 +138,23 @@ const PretreatmentSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Centralized or satellite CIP systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Programmable cleaning cycles</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Chemical dosing and monitoring</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Temperature and flow rate control</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Cleaning validation and reporting</span>
                   </li>
                 </ul>
@@ -167,19 +167,19 @@ const PretreatmentSystem = () => {
                 </p>
                 <ul className="mb-4 space-y-2">
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Immersion tanks with ultrasonic cleaning</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Spray washing systems</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Automated drying stations</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="text-orange-500 mr-3 mt-1">➤</div>
+                    <div className="text-green-500 mr-3 mt-1">➤</div>
                     <span className="text-gray-700">Documentation and traceability</span>
                   </li>
                 </ul>
@@ -206,42 +206,42 @@ const PretreatmentSystem = () => {
               <h3 className="text-2xl font-semibold mb-4 text-blue-800">Key Features & Advantages</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Product Quality Assurance</h4>
                     <p className="text-gray-700">Our pretreatment systems ensure consistent raw material quality for reliable final product characteristics.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Hygienic Design</h4>
                     <p className="text-gray-700">All systems are designed according to hygienic principles with FDA-approved materials and sanitary connections.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Process Automation</h4>
                     <p className="text-gray-700">Automated systems reduce manual intervention, improving consistency and reducing labor costs.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Resource Efficiency</h4>
                     <p className="text-gray-700">Optimized processes reduce water, energy, and chemical consumption for sustainable operation.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Comprehensive Monitoring</h4>
                     <p className="text-gray-700">Advanced instrumentation and control systems provide real-time process monitoring and documentation.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1 text-xl">•</div>
+                  <div className="text-green-500 mr-3 mt-1 text-xl">•</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Flexible Integration</h4>
                     <p className="text-gray-700">Modular design allows seamless integration with existing systems and future expansion.</p>
@@ -304,7 +304,7 @@ const PretreatmentSystem = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Request a Consultation
             </Link>

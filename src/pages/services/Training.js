@@ -43,7 +43,7 @@ const Training = () => {
 
             {/* Sidebar */}
             <div className="md:w-1/3">
-              <div className="bg-orange-500 p-6">
+              <div className="bg-green-500 p-6">
                 <h3 className="text-xl font-bold text-center text-white mb-4">Training</h3>
                 <p className="text-white">
                   Our expert team will get your operators and shopfloor owners proficient and up to speed on how to best utilize machinery and software to take your manufacturing process to the next level.

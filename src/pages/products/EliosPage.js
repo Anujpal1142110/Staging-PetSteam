@@ -64,19 +64,19 @@ const EliosPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Clamping Unit</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Clamping force: 6500 - 10000 kN</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Hydraulic clamping system with optimized kinematics</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Reinforced platen design for reduced deflection</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>High-precision mold movement</span>
                 </li>
               </ul>
@@ -87,19 +87,19 @@ const EliosPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Injection Unit</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Advanced hybrid injection system</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Cutting-edge drive technology</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Multiple screw configurations available</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>High injection speeds and pressures</span>
                 </li>
               </ul>
@@ -110,19 +110,19 @@ const EliosPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Control System</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>aXos controller with intuitive interface</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Advanced process monitoring and control</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Integrated quality assurance systems</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-green-500 mr-2">•</span>
                   <span>Real-time production data analytics</span>
                 </li>
               </ul>
@@ -146,19 +146,19 @@ const EliosPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Performance & Efficiency</h3>
               <ul className="space-y-3 w-full">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Specialized adaptive drive systems for maximum energy efficiency</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Optimized cycle times for large-scale production</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Reduced operating costs through energy recovery</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Advanced cooling systems for thermal stability</span>
                 </li>
               </ul>
@@ -173,19 +173,19 @@ const EliosPage = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-4">Precision & Reliability</h3>
               <ul className="space-y-3 w-full">
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Absolute accuracy in part production</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Outstanding shot-to-shot consistency</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Modular design for system customization</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="text-orange-500 mr-3 mt-1">➤</div>
+                  <div className="text-green-500 mr-3 mt-1">➤</div>
                   <span className="text-gray-700">Industry-leading reliability and excellence</span>
                 </li>
               </ul>
@@ -295,7 +295,7 @@ const EliosPage = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/contact"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
+              className="bg-green-600 hover:bg-orange-700 text-white px-8 py-3 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Request Technical Consultation
             </Link>
@@ -327,7 +327,7 @@ const EliosPage = () => {
               </p>
               <Link 
                 to="/products/pet-line"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Learn More
               </Link>
@@ -345,7 +345,7 @@ const EliosPage = () => {
               </p>
               <Link 
                 to="/products/elion"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Learn More
               </Link>
@@ -363,7 +363,7 @@ const EliosPage = () => {
               </p>
               <Link 
                 to="/products/elion-medical"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
+                className="inline-block bg-green-600 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
               >
                 Learn More
               </Link>
