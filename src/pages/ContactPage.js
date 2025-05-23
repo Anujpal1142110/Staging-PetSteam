@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import companyData from "../data/company";
 import axios from "axios";
 import mapImage from "../assets/images/map.webp";
-import contactBanner from "../assets/images/consultancybanner.jpeg";
+import contactBanner from "../assets/images/contact-us.jpg";
 import ravi from "../assets/team/1-Ravi-Bansal.jpeg";
 import Avinash from "../assets/team/2-Avinash-kumar-Pal.jpeg";
 import Manish from "../assets/team/3-Manish-kaushik.jpeg";

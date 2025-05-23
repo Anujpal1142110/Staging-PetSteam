@@ -1,189 +1,231 @@
-// File: components/home/NewsEvents.js
-import React from 'react';
+// File: components/common/NewsEventsWidget.js
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const NewsEvents = () => {
-  // Sample news data
-  const newsData = [
+const NewsEventsWidget = () => {
+  const [activeTab, setActiveTab] = useState('news');
+  const [isVisible, setIsVisible] = useState(true);
+
+  // Sample data
+  const recentNews = [
     {
       id: 1,
-      date: 'MAY 15, 2025',
-      title: 'PET Stream Expands Manufacturing Capabilities',
-      excerpt: 'We are excited to announce the expansion of our manufacturing facilities to meet growing demand for precision technology solutions in the packaging industry...',
-      slug: 'pet-stream-expands-manufacturing'
+      date: 'MAY 15',
+      title: 'Manufacturing Expansion Complete',
+      category: 'Company News'
     },
     {
       id: 2,
-      date: 'MAY 10, 2025',
+      date: 'MAY 10',
       title: 'New PET-Line Technology Launch',
-      excerpt: 'Introducing our latest breakthrough in preform system technology, featuring enhanced automation and improved reliability for beverage manufacturers...',
-      slug: 'new-pet-line-technology-launch'
+      category: 'Product'
     },
     {
       id: 3,
-      date: 'MAY 5, 2025',
-      title: 'Industry Excellence Award Recognition',
-      excerpt: 'PET Stream Incorporation receives prestigious recognition for innovation in precision technology and outstanding customer service in the manufacturing sector...',
-      slug: 'industry-excellence-award'
+      date: 'MAY 5',
+      title: 'Industry Excellence Award',
+      category: 'Awards'
     }
   ];
 
-  // Sample events data
-  const eventsData = [
+  const upcomingEvents = [
     {
       id: 1,
       date: 'JUN 15',
       title: 'Plastic Technology Expo 2025',
-      time: '9:00 AM - 6:00 PM',
-      location: 'Mumbai Convention Center'
+      location: 'Mumbai'
     },
     {
       id: 2,
       date: 'JUL 20',
       title: 'PET-Line Demo Day',
-      time: '2:00 PM - 5:00 PM',
       location: 'Our Facility'
     },
     {
       id: 3,
       date: 'AUG 05',
       title: 'Industry Networking Meet',
-      time: '6:00 PM - 8:00 PM',
-      location: 'Delhi Business Hub'
-    },
-    {
-      id: 4,
-      date: 'SEP 12',
-      title: 'Technical Training Workshop',
-      time: '10:00 AM - 4:00 PM',
-      location: 'Training Center'
+      location: 'Delhi'
     }
   ];
 
-  return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        {/* Header Section */}
-        {/* <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-12">
-          <div className="lg:w-2/3 mb-8 lg:mb-0">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              In Our World Speed and Reliability is Crucial
-            </h2>
-            <div className="text-gray-600 leading-relaxed space-y-4">
-              <p>
-                PET Stream Incorporation is a leading project delivery company, provides Project consultancy, Sales, 
-                and service in the fields of beverage, packaging, healthcare, precision technology, and other relevant 
-                fields of plastics industries, representing world-class manufacturers of capital equipment and tools.
-              </p>
-              <p>
-                Our company Leadership is having active experience of more than two decades in the Indian 
-                manufacturing sector, this expertise and exposure have shaped our vision which relies on trust and 
-                precision, we value time, we have hands-on experience to guide our customers to select the right 
-                equipment for their higher profit margin in the time of need.
-              </p>
-              <p>
-                Our capabilities are beyond a Sales & Service Partner, we also offer services e.g. – Machine 
-                Refurbishment, Hot Runner on-site refurbishment, Annual maintenance contract, Plant Audit, 
-                Breakdown service, Project consultation, and New Product development to our customers.
-              </p>
-            </div>
-          </div>
-          
-          <div className="lg:w-1/3 lg:pl-8">
-            <div className="bg-green-500 hover:bg-green-600 transition-colors duration-300 rounded-lg shadow-lg transform hover:scale-105">
-              <Link 
-                to="/news-events" 
-                className="block text-white text-center py-6 px-8 rounded-lg"
-              >
-                <h3 className="text-xl font-bold tracking-wide">NEWS & EVENTS</h3>
-              </Link>
-            </div>
-          </div>
-        </div> */}
+  // Auto show after 10 seconds when closed
+  React.useEffect(() => {
+    if (!isVisible) {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 10000); // 10 seconds
+      
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible]);
 
-        {/* News & Events Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Latest News Section */}
-          <div>
-            <h3 className="text-2xl font-bold mb-8 text-gray-800">Latest News</h3>
-            <div className="space-y-6">
-              {newsData.map((news) => (
+  const handleClose = () => {
+    setIsVisible(false);
+  };
+
+  if (!isVisible) return null;
+  return (
+    <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50">
+      {/* Direct Content Box with Blue Theme and Green Outline */}
+      <div className="bg-white rounded-2xl shadow-2xl w-80 border-2">
+        {/* Header - Blue Background */}
+        <div className="bg-blue-600 text-white rounded-t-2xl p-4 flex items-center justify-between">
+          <h2 className="text-lg font-bold tracking-wide">NEWS & EVENTS</h2>
+          <button 
+            onClick={handleClose}
+            className="text-white hover:text-gray-200 transition-colors p-1 hover:bg-white hover:bg-opacity-20 rounded"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Tab Navigation */}
+        <div className="flex border-b border-gray-200">
+          <button
+            onClick={() => setActiveTab('news')}
+            className={`flex-1 py-3 px-4 text-sm font-semibold transition-all duration-200 ${
+              activeTab === 'news'
+                ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50'
+                : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+            }`}
+          >
+            Latest News ({recentNews.length})
+          </button>
+          <button
+            onClick={() => setActiveTab('events')}
+            className={`flex-1 py-3 px-4 text-sm font-semibold transition-all duration-200 ${
+              activeTab === 'events'
+                ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50'
+                : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+            }`}
+          >
+            Events ({upcomingEvents.length})
+          </button>
+        </div>
+
+        {/* Content */}
+        <div className="p-4 max-h-64 overflow-y-auto">
+          {activeTab === 'news' ? (
+            <div className="space-y-3">
+              {recentNews.map((news) => (
                 <div 
                   key={news.id}
-                  className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-green-500"
+                  className="group p-3 rounded-lg border border-gray-100 hover:border-blue-200 hover:shadow-sm transition-all duration-200 cursor-pointer hover:bg-blue-50"
                 >
-                  <div className="text-green-600 font-semibold text-sm mb-2 uppercase tracking-wide">
-                    {news.date}
+                  <div className="flex items-start justify-between mb-2">
+                    <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium">
+                      {news.category}
+                    </span>
+                    <span className="text-xs text-gray-500 font-semibold">
+                      {news.date}
+                    </span>
                   </div>
-                  <h4 className="text-lg font-bold text-gray-800 mb-3 hover:text-green-600 transition-colors">
-                    <Link to={`/news/${news.slug}`}>{news.title}</Link>
+                  <h4 className="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition-colors leading-tight">
+                    {news.title}
                   </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    {news.excerpt}
-                  </p>
-                  <Link 
-                    to={`/news/${news.slug}`}
-                    className="text-green-600 hover:text-orange-700 font-semibold text-sm uppercase tracking-wide transition-colors inline-flex items-center group"
-                  >
-                    READ MORE
-                    <span className="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                  </Link>
                 </div>
               ))}
             </div>
-            <div className="mt-8">
-              <Link 
-                to="/news"
-                className="inline-block bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg transition-colors duration-300 font-semibold"
-              >
-                View All News
-              </Link>
+          ) : (
+            <div className="space-y-3">
+              {upcomingEvents.map((event) => (
+                <div 
+                  key={event.id}
+                  className="group p-3 rounded-lg bg-gradient-to-r from-blue-50 to-blue-50 border border-blue-100 hover:shadow-sm transition-all duration-200 cursor-pointer hover:from-blue-100 hover:to-blue-100"
+                >
+                  <div className="flex items-center space-x-3">
+                    <div className="bg-blue-600 text-white rounded-lg p-2 text-center min-w-[45px]">
+                      <div className="text-xs font-bold leading-tight">{event.date}</div>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition-colors mb-1">
+                        {event.title}
+                      </h4>
+                      <p className="text-xs text-gray-600 flex items-center">
+                        <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        </svg>
+                        {event.location}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
-          </div>
-
-          {/* Upcoming Events Section */}
-          <div>
-            <h3 className="text-2xl font-bold mb-8 text-gray-800">Upcoming Events</h3>
-           <div className="space-y-4">
-  {eventsData.map((event) => (
-    <div 
-      key={event.id}
-      className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-lg p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
-    >
-      <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <div className="text-center">
-            <div className="text-2xl font-bold">{event.date}</div>
-          </div>
-          <div>
-            <h4 className="font-bold text-lg mb-1">{event.title}</h4>
-            <p className="text-gray-300 text-sm">{event.time}</p>
-            <p className="text-gray-300 text-sm">{event.location}</p>
-          </div>
+          )}
         </div>
-        <div className="text-blue-500 hover:text-white transition-colors cursor-pointer">
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-          </svg>
+
+        {/* Footer */}
+        <div className="p-4 border-t border-gray-200 bg-gray-50 rounded-b-2xl">
+          <div className="flex space-x-2">
+            <Link 
+              to="/news"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-3 rounded-lg text-sm font-semibold transition-colors"
+            >
+              All News
+            </Link>
+            <Link 
+              to="/events"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-3 rounded-lg text-sm font-semibold transition-colors"
+            >
+              All Events
+            </Link>
+          </div>
         </div>
       </div>
     </div>
-  ))}
-</div>
+  );
+};
 
-            <div className="mt-8">
-              <Link 
-                to="/events"
-                className="inline-block bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg transition-colors duration-300 font-semibold"
-              >
-                View All Events
-              </Link>
+// Usage example
+const ExampleUsage = () => {
+  return (
+    <div className="min-h-screen bg-gray-100">
+      {/* Your page content */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl font-bold text-gray-800 mb-8">
+            Explore Our Products And Services
+          </h1>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-lg p-6 shadow-lg">
+              <img src="/api/placeholder/300/200" alt="Product 1" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <h3 className="text-xl font-bold mb-4">Injection Molding Machines</h3>
+              <p className="text-gray-600">Advanced injection molding technology for precision manufacturing.</p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-lg">
+              <img src="/api/placeholder/300/200" alt="Product 2" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <h3 className="text-xl font-bold mb-4">Lab Equipment</h3>
+              <p className="text-gray-600">Professional laboratory equipment for quality testing and analysis.</p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-lg p-6 shadow-lg text-center">
+              <h4 className="text-lg font-bold mb-2">Quality Assurance</h4>
+              <p className="text-gray-600 text-sm">Rigorous testing and quality control processes.</p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-lg text-center">
+              <h4 className="text-lg font-bold mb-2">Expert Support</h4>
+              <p className="text-gray-600 text-sm">Professional technical support and consultation.</p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-lg text-center">
+              <h4 className="text-lg font-bold mb-2">Innovation</h4>
+              <p className="text-gray-600 text-sm">Cutting-edge technology and continuous improvement.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      {/* News & Events Widget - Always Visible */}
+      <NewsEventsWidget />
+    </div>
   );
 };
 
-export default NewsEvents;
+export default ExampleUsage;
+export { NewsEventsWidget };
