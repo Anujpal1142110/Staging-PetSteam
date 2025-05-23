@@ -5,7 +5,7 @@ const Training = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Banner Section */}
-<section
+{/* <section
   className="relative bg-fixed bg-center bg-cover h-64 md:h-96"
   style={{ backgroundImage: `url(${trainingBg})` }}
 >
@@ -14,8 +14,22 @@ const Training = () => {
       Beverage Filling
     </h1>
   </div>
-</section>
-
+</section> */}
+      <section
+        className="relative bg-fixed bg-center bg-cover h-96"
+        style={{ backgroundImage: `url(${trainingBg})` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+            Training
+          </h1>
+          <nav className="flex items-center text-white text-sm">
+            <a href="/" className="hover:text-gray-200">Home</a>
+            <span className="mx-2">›</span>
+            <span>Training</span>
+          </nav>
+        </div>
+      </section>
 
       {/* Main Content */}
       <div className="py-8 flex-grow bg-white">

@@ -14,7 +14,7 @@ export default function Header() {
       background: '#282c34',
       color: '#fff'
     }}>
-      <h1>Admin</h1>
+      <h1>adminpanel</h1>
       <button onClick={logout}>Logout</button>
     </header>
   );

@@ -60,9 +60,7 @@ const InjectionMolding = () => {
             <div className="md:w-2/3 md:pr-8">
               <h3 className="text-xl font-bold text-blue-800 mb-3">NETSTAL PET-LINE (1200–4000 kN)</h3>
               <p className="text-gray-700 mb-4">
-                With full compatibility to existing peripherals, PET-LINE makes switching to
-                NETSTAL a breeze—and offers extreme robustness, top energy efficiency and
-                continuous-run reliability.
+              Netstal PET-Line offers the broadest compatibility with existing side-entry molds and post-mold cooling stations. The system impresses with superlative output, exceptional energy efficiency, optimized processing of PET recyclates and an intuitive operating unit.
               </p>
               <Link
                 to="/products/pet-line"

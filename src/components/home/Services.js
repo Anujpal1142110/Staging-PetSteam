@@ -10,14 +10,14 @@ import img7 from '../../assets/images/Medical-pharma-paxkaging-mold.jpg';
 import img8 from '../../assets/images/Liquid-coloront-and-additives.png';
 
 const servicesData = [
-  { id: 1, title: "Injection Molding Machine", slug: "injection-molding-machine", image: img1, isFeatured: true, displayOrder: 1 },
-  { id: 2, title: "Beverage Filling Line", slug: "beverage-filling-line", image: img2, isFeatured: true, displayOrder: 2 },
-  { id: 3, title: "PET Preform Molds", slug: "pet-preform-molds", image: img3, isFeatured: true, displayOrder: 3 },
+  { id: 1, title: "Injection Molding Machine", slug: "injection-molding", image: img1, isFeatured: true, displayOrder: 1 },
+  { id: 2, title: "Beverage Filling Line", slug: "beverage-filling", image: img2, isFeatured: true, displayOrder: 2 },
+  { id: 3, title: "PET Preform Molds", slug: "pet-preform", image: img3, isFeatured: true, displayOrder: 3 },
   { id: 4, title: "Lab Equipment", slug: "lab-equipment", image: img4, isFeatured: true, displayOrder: 4 },
-  { id: 5, title: "Drying & Dehumidification System", slug: "drying-dehumidification", image: img5, isFeatured: true, displayOrder: 5 },
-  { id: 6, title: "Caps & Closures Mold", slug: "caps-closures-mold", image: img6, isFeatured: true, displayOrder: 6 },
+  { id: 5, title: "Drying & Dehumidification System", slug: "drying-system", image: img5, isFeatured: true, displayOrder: 5 },
+  { id: 6, title: "Caps & Closures Mold", slug: "caps-mold", image: img6, isFeatured: true, displayOrder: 6 },
   { id: 7, title: "Packaging Mold", slug: "packaging-mold", image: img7, isFeatured: true, displayOrder: 7 },
-  { id: 8, title: "Liquid Colorant & Additives", slug: "liquid-colorant-additives", image: img8, isFeatured: true, displayOrder: 8 }
+  { id: 8, title: "Liquid Colorant & Additives", slug: "colorants", image: img8, isFeatured: true, displayOrder: 8 }
 ];
 
 const ImageCard = ({ service, index, isVisible }) => {

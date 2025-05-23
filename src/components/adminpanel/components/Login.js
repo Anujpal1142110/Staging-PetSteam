@@ -29,7 +29,7 @@ export default function Login() {
 
   return (
     <div style={{ maxWidth: 300, margin: "100px auto" }}>
-      <h2>Admin Login</h2>
+      <h2>adminpanel Login</h2>
       {err && <p style={{ color: "red" }}>{err}</p>}
       <form onSubmit={handleSubmit}>
         <div>

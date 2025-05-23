@@ -4,7 +4,7 @@ const ProjectDesign = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Banner Section */}
-<section
+{/* <section
   className="relative bg-fixed bg-center bg-cover h-64 md:h-96"
   style={{ backgroundImage: `url(${trainingBg})` }}
 >
@@ -13,7 +13,27 @@ const ProjectDesign = () => {
       Beverage Filling
     </h1>
   </div>
-</section>
+</section> */}
+
+
+
+<section
+        className="relative bg-fixed bg-center bg-cover h-96"
+        style={{ backgroundImage: `url(${trainingBg})` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+          Refurbishment
+
+          </h1>
+          <nav className="flex items-center text-white text-sm">
+            <a href="/" className="hover:text-gray-200">Home</a>
+            <span className="mx-2">›</span>
+            <span>Refurbishment
+            </span>
+          </nav>
+        </div>
+      </section>
 
 
       {/* Main Content */}
@@ -43,7 +63,7 @@ const ProjectDesign = () => {
             {/* Sidebar */}
             <div className="md:w-1/3">
               <div className="bg-green-500 p-6">
-                <h3 className="text-xl font-bold text-center text-white mb-4">Complete Machine Refurbishment Services & Health Checkup</h3>
+                <h3 className="text-xl font-bold text-center text-white mb-4">Refurbishment</h3>
                 <p className="text-white">
                  We offer Services for your old HUSKY, SACMI, NETSTAL PET-LINE, and closures machines refurbishment, retrofitting and life cycle upgradation, Our fleet of experienced service engineers spread across India and in African continent offer value-adding services.
                 </p>

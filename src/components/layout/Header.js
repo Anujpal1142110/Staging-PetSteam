@@ -81,7 +81,7 @@ const Header = () => {
       ]
     },
     { title: 'Contact', path: '/contact' },
-    { title: 'Panel', path: '/adminpanel' }
+    // { title: 'Panel', path: '/adminpanel' }
   ];
 
   // Page theme configurations matching PSI style
@@ -92,7 +92,7 @@ const Header = () => {
     '/products': { active: 'Products', color: 'orange' },
     '/newsroom': { active: 'Newsroom', color: 'orange' },
     '/contact': { active: 'Contact', color: 'orange' },
-    '/Panel': { active: 'adminPanel', color: 'orange' }
+    '/Panel': { active: 'adminpanel', color: 'orange' }
   };
 
   // Get current page theme
@@ -296,7 +296,7 @@ const Header = () => {
           <div className="hidden lg:block">
             <Link
               to="/contact"
-              className="btn bg-green-600 hover:bg-orange-700 text-white py-3 px-6 rounded-md font-medium shadow-md transition-all duration-300"
+              className="btn bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Get a Quote
             </Link>

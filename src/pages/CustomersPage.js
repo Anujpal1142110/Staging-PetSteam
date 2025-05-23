@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Layout from '../components/layout/Layout';
 import Header from '../components/layout/Header';
@@ -9,6 +9,9 @@ const CustomersPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredCustomers, setFilteredCustomers] = useState([]);
+    const [isPaused, setIsPaused] = useState(false);
+    const scrollContainerRef = useRef(null);
+    const animationRef = useRef(null);
   
   // Sort customers by display order
   const sortedCustomers = [...CustomersData].sort((a, b) => a.displayOrder - b.displayOrder);
@@ -31,13 +34,53 @@ const CustomersPage = () => {
     setFilteredCustomers(results);
   }, [searchTerm]);
   
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (!scrollContainer || isPaused) return;
+    
+    let lastTime = 0;
+    const speed = 0.3; // Pixels per millisecond
+
+    const scrollAnimation = (timestamp) => {
+      const elapsed = timestamp - lastTime;
+      
+      if (elapsed > 16) { // Aim for 60fps
+        lastTime = timestamp;
+        
+        // Move the scroll position from left to right
+        scrollContainer.scrollLeft += speed * elapsed;
+        
+        // Reset to beginning when reaching the end
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+          scrollContainer.scrollLeft = 0;
+          scrollContainer.scrollTop = 0; // Reset vertical scroll to top
+        }
+      }
+      
+      animationRef.current = requestAnimationFrame(scrollAnimation);
+    };
+    
+    // Initial reset to top
+    scrollContainer.scrollTop = 0;
+    animationRef.current = requestAnimationFrame(scrollAnimation);
+    
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [isPaused, isVisible]);
+
   return (
     
       
       <main>
         {/* Hero Section */}
         <section className="bg-blue-600 py-20">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4"
+             ref={scrollContainerRef}
+          >
+      
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -104,8 +147,8 @@ const CustomersPage = () => {
                       />
                     </div>
                     <div className="p-6 flex-1 flex flex-col">
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">{customer.title}</h3>
-                      <p className="text-gray-600 mb-4 flex-1">{customer.description}</p>
+                    <h3 className="text-xl font-bold text-gray-800 mb-2 text-center">{customer.title}</h3>
+                      {/* <p className="text-gray-600 mb-4 flex-1">{customer.description}</p> */}
                       <a
                         href={`/Customers/${customer.slug}`}
                         className="text-blue-600 font-medium hover:text-blue-800 transition-colors duration-300 inline-flex items-center"

@@ -5,12 +5,12 @@ import Sidebar    from "./Sidebar";
 import Header     from "./Header";
 import UsersTable from "./UsersTable";
 
-export default function AdminPanel() {
+export default function adminpanel() {
   return (
-    <div className="admin-layout" style={{ display: "flex", minHeight: "100vh" }}>
+    <div className="adminpanel-layout" style={{ display: "flex", minHeight: "100vh" }}>
       <Sidebar />
 
-      <div className="admin-main" style={{ flex: 1, padding: 20 }}>
+      <div className="adminpanel-main" style={{ flex: 1, padding: 20 }}>
         <Header />
 
         <Routes>

@@ -80,55 +80,84 @@ const ContactFormModal = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div 
-      className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 overflow-y-auto"
-      onClick={handleBackdropClick}
-    >
-      <div className="bg-white rounded-lg w-full max-w-4xl my-8">
-        <div className="p-1">
+    <>
+      <style>{`
+        @keyframes blob {
+          0% {
+            transform: translate(0px, 0px) scale(1);
+          }
+          33% {
+            transform: translate(30px, -50px) scale(1.1);
+          }
+          66% {
+            transform: translate(-20px, 20px) scale(0.9);
+          }
+          100% {
+            transform: translate(0px, 0px) scale(1);
+          }
+        }
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+        .modal-backdrop {
+          backdrop-filter: blur(8px);
+        }
+      `}</style>
+      
+      <div 
+        className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center p-4 overflow-y-auto modal-backdrop"
+        onClick={handleBackdropClick}
+      >
+        <div className="bg-white rounded-2xl w-full max-w-6xl my-8 shadow-2xl max-h-[95vh] overflow-y-auto">
           {/* Close button at top-right */}
-          <div className="flex justify-end p-4">
+          <div className="sticky top-0 bg-white z-20 flex justify-end p-4 border-b border-gray-100">
             <button 
               onClick={onClose}
-              className="text-gray-500 hover:text-gray-700 transition-colors"
+              className="text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full p-2 transition-all duration-200"
               aria-label="Close"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
           
           {/* Main content */}
-          <div className="px-6 pb-8">
+          <div className="px-8 pb-8">
             {/* Contact Form Section */}
             <section className="relative overflow-hidden">
               {/* Animated background */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-xl">
-                <div className="absolute inset-0 opacity-20">
+                <div className="absolute inset-0 opacity-30">
                   <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
                   <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
                   <div className="absolute -bottom-40 left-40 w-80 h-80 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
                 </div>
               </div>
 
-              <div className="relative z-10">
+              <div className="relative z-10 py-8">
                 <div className="max-w-7xl mx-auto">
                   {/* Decorative top accent */}
                   <div className="text-center mb-8">
-                    <div className="inline-block px-8 py-2 bg-orange-100 text-green-600 rounded-full font-medium mb-6">
-                      Get in Touch with Our Experts
+                    <div className="inline-block px-8 py-3 bg-gradient-to-r from-orange-100 to-orange-50 text-green-600 rounded-full font-semibold mb-6 shadow-lg">
+                      🚀 Get in Touch with Our Experts
                     </div>
                   </div>
 
                   <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                     {/* Left Side - Enhanced Form Title and Features */}
                     <div className="lg:w-1/3">
-                      <div>
+                      <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
                         <h2 className="text-3xl lg:text-4xl font-bold mb-4 leading-tight">
                           ENQUIRY <span className="text-green-500 block">FORM</span>
                         </h2>
-                        <div className="h-1.5 w-24 bg-green-500 mb-6 rounded-full"></div>
+                        <div className="h-1.5 w-24 bg-gradient-to-r from-green-400 to-green-600 mb-6 rounded-full"></div>
 
                         <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                           Contact with us through our representative or submit a
@@ -138,9 +167,9 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                         {/* Added features list */}
                         <div className="space-y-4">
                           <div className="flex items-center gap-4">
-                            <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-50 rounded-xl flex items-center justify-center shadow-md">
                               <svg
-                                className="w-5 h-5 text-green-500"
+                                className="w-6 h-6 text-green-500"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -153,14 +182,14 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                 />
                               </svg>
                             </div>
-                            <span className="text-gray-700">
+                            <span className="text-gray-700 font-medium">
                               Instant response within 24 hours
                             </span>
                           </div>
                           <div className="flex items-center gap-4">
-                            <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-50 rounded-xl flex items-center justify-center shadow-md">
                               <svg
-                                className="w-5 h-5 text-green-500"
+                                className="w-6 h-6 text-green-500"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -173,14 +202,14 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                 />
                               </svg>
                             </div>
-                            <span className="text-gray-700">
+                            <span className="text-gray-700 font-medium">
                               100% secure & confidential
                             </span>
                           </div>
                           <div className="flex items-center gap-4">
-                            <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-50 rounded-xl flex items-center justify-center shadow-md">
                               <svg
-                                className="w-5 h-5 text-green-500"
+                                className="w-6 h-6 text-green-500"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -193,7 +222,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                 />
                               </svg>
                             </div>
-                            <span className="text-gray-700">
+                            <span className="text-gray-700 font-medium">
                               Quick consultation booking
                             </span>
                           </div>
@@ -241,23 +270,23 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                 />
                               </svg>
                             )}
-                            <p className="font-medium">{submitStatus.message}</p>
+                            <p className="font-semibold">{submitStatus.message}</p>
                           </div>
                         </div>
                       )}
 
                       <form onSubmit={handleSubmit} className="space-y-6">
-                        <div className="bg-white rounded-xl shadow-xl backdrop-blur-xl p-6">
+                        <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-8">
                           {/* First Row - Name and Email */}
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div className="group">
-                              <label className="block text-gray-700 font-bold mb-2 text-sm tracking-wide">
-                                Name
+                              <label className="block text-gray-700 font-semibold mb-3 text-sm tracking-wide">
+                                Name *
                               </label>
                               <div className="relative">
-                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors duration-200"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -276,19 +305,19 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   value={formData.name}
                                   onChange={handleChange}
                                   required
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white hover:border-gray-300"
                                   placeholder="Enter your name"
                                 />
                               </div>
                             </div>
                             <div className="group">
-                              <label className="block text-gray-700 font-bold mb-2 text-sm tracking-wide">
-                                Email Address
+                              <label className="block text-gray-700 font-semibold mb-3 text-sm tracking-wide">
+                                Email Address *
                               </label>
                               <div className="relative">
-                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors duration-200"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -307,7 +336,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   value={formData.email}
                                   onChange={handleChange}
                                   required
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white hover:border-gray-300"
                                   placeholder="Enter Email Address"
                                 />
                               </div>
@@ -317,13 +346,13 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                           {/* Second Row - Contact No and Job Title */}
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div className="group">
-                              <label className="block text-gray-700 font-bold mb-2 text-sm tracking-wide">
+                              <label className="block text-gray-700 font-semibold mb-3 text-sm tracking-wide">
                                 Contact No
                               </label>
                               <div className="relative">
-                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors duration-200"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -341,19 +370,19 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="phone"
                                   value={formData.phone}
                                   onChange={handleChange}
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white hover:border-gray-300"
                                   placeholder="Contact Number"
                                 />
                               </div>
                             </div>
                             <div className="group">
-                              <label className="block text-gray-700 font-bold mb-2 text-sm tracking-wide">
+                              <label className="block text-gray-700 font-semibold mb-3 text-sm tracking-wide">
                                 Job Title
                               </label>
                               <div className="relative">
-                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors duration-200"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -371,7 +400,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="jobTitle"
                                   value={formData.jobTitle || ""}
                                   onChange={handleChange}
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white hover:border-gray-300"
                                   placeholder="Job Title"
                                 />
                               </div>
@@ -381,13 +410,13 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                           {/* Third Row - Company Name and Product Dropdown */}
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div className="group">
-                              <label className="block text-gray-700 font-bold mb-2 text-sm tracking-wide">
+                              <label className="block text-gray-700 font-semibold mb-3 text-sm tracking-wide">
                                 Company Name
                               </label>
                               <div className="relative">
-                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors duration-200"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -405,13 +434,13 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="company"
                                   value={formData.company || ""}
                                   onChange={handleChange}
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white hover:border-gray-300"
                                   placeholder="Company Name"
                                 />
                               </div>
                             </div>
                             <div className="group">
-                              <label className="block text-gray-700 font-bold mb-2 text-sm tracking-wide">
+                              <label className="block text-gray-700 font-semibold mb-3 text-sm tracking-wide">
                                 Product Interest
                               </label>
                               <div className="relative">
@@ -419,7 +448,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="productInterest"
                                   value={formData.productInterest || ""}
                                   onChange={handleChange}
-                                  className="block w-full pl-4 pr-10 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white appearance-none cursor-pointer"
+                                  className="block w-full pl-4 pr-10 py-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white appearance-none cursor-pointer hover:border-gray-300"
                                 >
                                   <option value="">Select Your Product</option>
                                   <option value="Netstal">Netstal</option>
@@ -434,7 +463,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                     Spare Parts And Services
                                   </option>
                                 </select>
-                                <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
+                                <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
                                   <svg
                                     className="w-5 h-5 text-gray-400"
                                     fill="none"
@@ -456,13 +485,13 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                           {/* Fourth Row - Address */}
                           <div className="mb-6">
                             <div className="group">
-                              <label className="block text-gray-700 font-bold mb-2 text-sm tracking-wide">
+                              <label className="block text-gray-700 font-semibold mb-3 text-sm tracking-wide">
                                 Address
                               </label>
                               <div className="relative">
-                                <div className="absolute top-3 left-0 pl-3 flex items-start pointer-events-none">
+                                <div className="absolute top-4 left-0 pl-4 flex items-start pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors duration-200"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -486,7 +515,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   name="address"
                                   value={formData.address || ""}
                                   onChange={handleChange}
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
+                                  className="block w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white hover:border-gray-300"
                                   placeholder="Enter Address"
                                 />
                               </div>
@@ -496,13 +525,13 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                           {/* Fifth Row - Enquiry */}
                           <div className="mb-8">
                             <div className="group">
-                              <label className="block text-gray-700 font-bold mb-2 text-sm tracking-wide">
-                                Enquiry
+                              <label className="block text-gray-700 font-semibold mb-3 text-sm tracking-wide">
+                                Enquiry *
                               </label>
                               <div className="relative">
-                                <div className="absolute top-3 left-0 pl-3 flex items-start pointer-events-none">
+                                <div className="absolute top-4 left-0 pl-4 flex items-start pointer-events-none">
                                   <svg
-                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors"
+                                    className="w-5 h-5 text-gray-400 group-focus-within:text-green-500 transition-colors duration-200"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -520,8 +549,8 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                                   value={formData.message}
                                   onChange={handleChange}
                                   required
-                                  rows="4"
-                                  className="block w-full pl-10 pr-4 py-3 border-2 border-gray-100 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white resize-none"
+                                  rows="5"
+                                  className="block w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white resize-none hover:border-gray-300"
                                   placeholder="Tell us about your requirements..."
                                 ></textarea>
                               </div>
@@ -533,10 +562,10 @@ const ContactFormModal = ({ isOpen, onClose }) => {
                             <button
                               type="submit"
                               disabled={isSubmitting}
-                              className={`px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold rounded-lg shadow-lg hover:shadow-green-500/25 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 ${
+                              className={`px-10 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-green-500/25 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 ${
                                 isSubmitting
                                   ? "opacity-70 cursor-not-allowed"
-                                  : "hover:transform hover:-translate-y-1"
+                                  : "hover:transform hover:-translate-y-1 hover:from-green-600 hover:to-green-700"
                               }`}
                             >
                               {isSubmitting ? (
@@ -578,7 +607,7 @@ const ContactFormModal = ({ isOpen, onClose }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -592,22 +621,26 @@ const ContactCTA = () => {
   return (
     <>
       <section
-        className="py-20 bg-primary-700 text-white"
+        className="py-20 bg-blue-700 text-white relative overflow-hidden"
         style={{
-          backgroundImage: 'linear-gradient(rgba(43, 108, 176, 0.9), rgba(43, 108, 176, 0.9)), url(/images/cta-bg.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundImage: 'linear-gradient(rgba(43, 108, 176, 0.9), rgba(43, 108, 176, 0.9))',
         }}
       >
-        <div className="container mx-auto px-4 text-center">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Optimize Your Manufacturing?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Our team of experts is ready to help you select the right equipment and services 
             for your specific requirements.
           </p>
           <button
             onClick={openModal}
-            className="btn bg-white text-primary-700 hover:bg-gray-100 text-lg px-8 py-3"
+            className="bg-white text-blue-700 hover:bg-gray-100 text-lg px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-1"
           >
             Contact Us Today
           </button>

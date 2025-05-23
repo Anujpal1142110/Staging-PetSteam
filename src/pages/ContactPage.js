@@ -419,7 +419,7 @@ const ContactPage = () => {
                 },
                 {
                   name: "MANISH KAUSHIK",
-                  position: "Admin, Purchase & Supply Chain Head",
+                  position: "adminpanel, Purchase & Supply Chain Head",
                   phone: "+91 9811906119",
                   image: Manish,
                   email: "manish.kaushik@petstream.in",
@@ -427,7 +427,7 @@ const ContactPage = () => {
 
                 {
                   name: "SAURABH TYAGI",
-                  position: "Admin, Purchase & Supply Chain Head",
+                  position: "adminpanel, Purchase & Supply Chain Head",
                   phone: "+91 9899896260",
                   image: Saurabh,
                   email: "mailto:saurabh.tyagi@petstream.in",

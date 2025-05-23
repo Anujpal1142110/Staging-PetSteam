@@ -8,7 +8,7 @@ const users = [
     title:  'Regional Paradigm Technician',
     status: 'Active',
     age:     27,
-    role:   'Admin',
+    role:   'adminpanel',
     avatar: 'https://randomuser.me/api/portraits/women/44.jpg'
   },
   {
@@ -44,7 +44,7 @@ const users = [
     title:  'Lean Implementation Liaison',
     status: 'Inactive',
     age:     36,
-    role:   'Admin',
+    role:   'adminpanel',
     avatar: 'https://randomuser.me/api/portraits/women/22.jpg'
   }
 ];

@@ -10,13 +10,23 @@ const Customers = () => {
   const animationRef = useRef(null);
   
   // Filter featured Customers
+  // const featuredCustomers = CustomersData
+  //   .filter(customer => customer.isFeatured)
+  //   .sort((a, b) => a.displayOrder - b.displayOrder);
+
+
   const featuredCustomers = CustomersData
     .filter(customer => customer.isFeatured)
-    .sort((a, b) => a.displayOrder - b.displayOrder);
+    .sort((a, b) => a.displayOrder - b.displayOrder)
+    .map(customer => ({
+        ...customer,
+        slug: 'about/customers'
+    }));
 
   useEffect(() => {
     // Set visibility after component mounts for animations
     setIsVisible(true);
+    
   }, []);
 
   // Continuous scrolling effect from left to right
@@ -107,7 +117,7 @@ const Customers = () => {
                     transition={{ duration: 0.8, delay: index * 0.1 }}
                     className="flex-shrink-0 w-44"
                   >
-                    <Link to={`/Customers/${customer.slug}`} className="block">
+                    <Link to={`/${customer.slug}`} className="block">
                       <div className="h-24 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-500 flex items-center justify-center p-4">
                         <img 
                           src={customer.image} 
@@ -130,7 +140,7 @@ const Customers = () => {
                     transition={{ duration: 0.8, delay: index * 0.1 }}
                     className="flex-shrink-0 w-44"
                   >
-                    <Link to={`/Customers/${customer.slug}`} className="block">
+                    <Link to={`/${customer.slug}`} className="block">
                       <div className="h-24 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-500 flex items-center justify-center p-4">
                         <img 
                           src={customer.image} 
@@ -164,7 +174,7 @@ const Customers = () => {
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   className="flex-shrink-0"
                 >
-                  <Link to={`/Customers/${customer.slug}`} className="block">
+                  <Link to={`/${customer.slug}`} className="block">
                     <div className="h-32 w-56 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-500 flex items-center justify-center p-6">
                       <img 
                         src={customer.image} 
@@ -187,7 +197,7 @@ const Customers = () => {
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   className="flex-shrink-0"
                 >
-                  <Link to={`/Customers/${customer.slug}`} className="block">
+                  <Link to={`/${customer.slug}`} className="block">
                     <div className="h-32 w-56 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-500 flex items-center justify-center p-6">
                       <img 
                         src={customer.image} 
