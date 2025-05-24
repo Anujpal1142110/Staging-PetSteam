@@ -10,11 +10,15 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center">
           {/* Content Section - Now First */}
           <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12 order-2 lg:order-1">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">About Our Company</h2>
-            <div dangerouslySetInnerHTML={{ __html: companyData.history }} className="text-gray-600 mb-6 leading-relaxed" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">In Our World Speed and Reliability is Crucial -</h2>
+            <div className="text-gray-600 mb-6 leading-relaxed space-y-4">
+              <p>{companyData.history.paragraph1}</p>
+              <p>{companyData.history.paragraph2}</p>
+              <p>{companyData.history.paragraph3}</p>
+            </div>
             {/* <Link 
               to="/about" 
-              className="btn btn-primary"
+              className="btn btn-primary inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
             >
               Learn More About Us
             </Link> */}

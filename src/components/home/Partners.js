@@ -25,7 +25,7 @@ const Partners = () => {
     if (!container || isPaused) return;
 
     let lastTime = 0;
-    const speed = 0.5; // px per ms
+    const speed = 0.2; // px per ms
 
     const step = (t) => {
       const delta = t - lastTime;
@@ -80,7 +80,7 @@ const Partners = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
         >
           <h3 className="text-xl font-medium text-gray-700">
-            At PET Stream Incorporation, we’re all about partnerships and collaborations, so we scour the globe to find
+            At PET Stream Incorporation, we're all about partnerships and collaborations, so we scour the globe to find
             partners who excel at what they do and share our vision.
           </h3>
         </motion.div>
@@ -131,13 +131,20 @@ const Partners = () => {
                   transition={{ duration: 0.5 }}
                   className="inline-block w-44 mx-2 flex-shrink-0"
                 >
-                  <Link to={`/Partners/${partner.slug}`}>
-                    <div className="h-24 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center p-4">
+                  {/* Updated Link to route to individual products */}
+                  <Link to={`/products/${partner.slug}`} title={`View ${partner.title}`}>
+                    <div className="h-24 bg-white rounded-lg hover:bg-gray-50 transition-all duration-300 flex items-center justify-center p-4 group">
                       <img
                         src={partner.image}
                         alt={partner.title}
-                        className="max-h-full max-w-full object-contain transition-transform duration-300 hover:scale-105"
+                        className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                       />
+                    </div>
+                    {/* Optional: Add product title below image */}
+                    <div className="text-center mt-2">
+                      <p className="text-sm text-gray-600 font-medium truncate">
+                        {partner.title}
+                      </p>
                     </div>
                   </Link>
                 </motion.div>
@@ -146,23 +153,20 @@ const Partners = () => {
           </div>
         </div>
 
-        {/* View All */}
-        {/* <motion.div
+        {/* View All Products */}
+        <motion.div
           className="text-center mt-12"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
           <Link
-            to="/Partners"
-            className="inline-block bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg transition-colors duration-300 font-semibold"
+            to="/products"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300 font-semibold"
           >
-            <span className="relative z-10">View All Partners</span>
-            <span className="absolute bottom-0 left-0 w-full h-0 bg-blue-800 transition-all duration-300 group-hover:h-full -z-0">→</span>
-            
-            
+            View All Products
           </Link>
-        </motion.div> */}
+        </motion.div>
 
       </div>
     </section>
