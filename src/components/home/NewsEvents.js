@@ -54,7 +54,7 @@ const NewsEventsWidget = () => {
     if (!isVisible) {
       const timer = setTimeout(() => {
         setIsVisible(true);
-      }, 10000); // 10 seconds
+      }, 60000); // 10 seconds
       
       return () => clearTimeout(timer);
     }
