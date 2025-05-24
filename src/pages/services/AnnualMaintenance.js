@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import trainingBg from '../../assets/images/n-logistic.jpg';
 
 const AnnualMaintenance = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Single Hero Banner Section */}

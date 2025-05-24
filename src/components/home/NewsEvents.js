@@ -183,47 +183,8 @@ const NewsEventsWidget = () => {
 // Usage example
 const ExampleUsage = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Your page content */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-gray-800 mb-8">
-            Explore Our Products And Services
-          </h1>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <img src="/api/placeholder/300/200" alt="Product 1" className="w-full h-48 object-cover rounded-lg mb-4" />
-              <h3 className="text-xl font-bold mb-4">Injection Molding Machines</h3>
-              <p className="text-gray-600">Advanced injection molding technology for precision manufacturing.</p>
-            </div>
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <img src="/api/placeholder/300/200" alt="Product 2" className="w-full h-48 object-cover rounded-lg mb-4" />
-              <h3 className="text-xl font-bold mb-4">Lab Equipment</h3>
-              <p className="text-gray-600">Professional laboratory equipment for quality testing and analysis.</p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-              <h4 className="text-lg font-bold mb-2">Quality Assurance</h4>
-              <p className="text-gray-600 text-sm">Rigorous testing and quality control processes.</p>
-            </div>
-            <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-              <h4 className="text-lg font-bold mb-2">Expert Support</h4>
-              <p className="text-gray-600 text-sm">Professional technical support and consultation.</p>
-            </div>
-            <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-              <h4 className="text-lg font-bold mb-2">Innovation</h4>
-              <p className="text-gray-600 text-sm">Cutting-edge technology and continuous improvement.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* News & Events Widget - Always Visible */}
-      <NewsEventsWidget />
-    </div>
+    
+     <NewsEventsWidget />
   );
 };
 

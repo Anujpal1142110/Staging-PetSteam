@@ -293,14 +293,14 @@ const Header = () => {
           </div>
 
           {/* Get a Quote Button - Desktop */}
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <Link
               to="/contact"
               className="btn bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md font-medium shadow-md transition-all duration-300"
             >
               Get a Quote
             </Link>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center">

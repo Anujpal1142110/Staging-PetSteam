@@ -22,12 +22,12 @@ const MachineRelocation = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
-            Machine Relocation, Installation & Dis-Assembly
+            Machine Relocation
           </h1>
           <nav className="flex items-center text-white text-sm">
             <a href="/" className="hover:text-gray-200">Home</a>
             <span className="mx-2">›</span>
-            <span>Machine Relocation, Installation & Dis-Assembly</span>
+            <span>Machine Relocation</span>
           </nav>
         </div>
       </section>

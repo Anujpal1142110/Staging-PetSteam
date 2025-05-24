@@ -81,11 +81,11 @@ const Footer = () => {
                   <span className="mr-2 text-blue-500">›</span> About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
                   <span className="mr-2 text-blue-500">›</span> Services
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/products" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
                   <span className="mr-2 text-blue-500">›</span> Products
@@ -104,28 +104,43 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 pb-2 border-b-2 border-blue-500 inline-block">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
+                <Link to="services/project-design" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
                   <span className="mr-2 text-blue-500">›</span> Project Consultancy
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
+                <Link to="services/refurbishment" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
                   <span className="mr-2 text-blue-500">›</span> Machine Refurbishment
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
+                <Link to="services/maintenance" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
                   <span className="mr-2 text-blue-500">›</span> Annual Maintenance
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
-                  <span className="mr-2 text-blue-500">›</span> Plant Audit
+                <Link to="services/relocation" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
+                  <span className="mr-2 text-blue-500">›</span> Machine Installation & Dis-Assembly
                 </Link>
               </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
+                   <li>
+                <Link to="services/breakdown" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
                   <span className="mr-2 text-blue-500">›</span> Breakdown Service
+                </Link>
+              </li>
+                <li>
+                <Link to="services/application" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
+                  <span className="mr-2 text-blue-500">›</span> Application Support
+                </Link>
+              </li>
+                <li>
+                <Link to="services/training" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
+                  <span className="mr-2 text-blue-500">›</span> Training
+                </Link>
+              </li>
+                    <li>
+                <Link to="services/parts" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center text-sm">
+                  <span className="mr-2 text-blue-500">›</span> Spare Parts
                 </Link>
               </li>
             </ul>
